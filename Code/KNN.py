@@ -49,7 +49,7 @@ if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
     # solve_by_KNN(name_list[0])
     for i,name in enumerate(name_list):
-        res_name = solve_by_KNN(name,"./Demo/result_0521")
+        res_name = solve_by_KNN(name,"./Demo/result_KNN")
         # print(name)
         # evaluate_training_set(name)
     # x = np.array([-1,0,0,0,1,0]).reshape(3,2)
