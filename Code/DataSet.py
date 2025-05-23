@@ -8,15 +8,14 @@ class TrainingSet:
         self.dataframe = pd.read_csv(file_path)
         self.size = self.dataframe.shape[0]
         self.questions = self.dataframe.iloc[:,1].to_list() # could design a datasructure if needed
-        self.scores = self.dataframe.iloc[:,2:20].to_numpy()
+        self.scores = self.dataframe.iloc[:,2:22].to_numpy()
         self.opt_score = np.sum(np.max(self.scores,axis=1))
 
     def read_feature(self,file_path):
         self.features = np.loadtxt(file_path, delimiter=",")
 
     def best_model(self, idx=None):
-        if idx is None:
-            idx = np.arange(self.size)
+        idx = idx if idx is not None else np.arange(self.size)
         return self.scores[idx].sum(axis=0).argmax()
     
     def difference(self,score_table:np.ndarray):
@@ -35,12 +34,19 @@ class TrainingSet:
         for i in range(20):
             res = np.sum(np.max(score_table[:,order[-i:]],axis=1))
             print(f"{i}:{res/opt*100:.2f}%,{res/self.size*100:.2f}%")
-    
-    def evaluate(self, ans):
-        performance = np.sum(self.scores[np.arange(self.size),ans])
-        print(f"Opitmal score:{self.opt_score}")
-        print(f"Your score:{performance}")
-        print(f"Percentage:{performance/self.opt_score*100:.2f}")
+
+    def get_opt_score(self, idx):
+        return np.sum(np.max(self.scores[idx,:],axis=1))
+
+    def evaluate(self, ans, idx=None):
+        idx = idx if idx is not None else np.arange(self.size)
+        score_table = self.scores[idx,:]
+        performance = np.sum(score_table[np.arange(len(ans)),ans])
+        opt_idx = self.get_opt_score(idx)
+        # print(f"Opitmal score:{opt_idx}")
+        # print(f"Your score:{performance}")
+        # print(f"Percentage:{performance/opt_idx*100:.2f}")
+        return performance/opt_idx
         
 
 

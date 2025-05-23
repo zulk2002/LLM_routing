@@ -10,7 +10,7 @@ id,question,pred
 8,"Question: In addition to Jennifer Tilly, Brian Backer, Sally Kellerman, Nedra Volz, Clara Peller, Wendie Jo Sperber and the actor born on June 22 1958 in Wilmette, Illinois, who else starred in Moving Violations?",deepseek_chat
 9,"Question: Which year was the more recent engine series, the Honda K or Honda H, introduced?",gpt_4o_mini_cot
 10,Question: Does Shengzhou have more former names than Linchuan District?,gpt_4o_mini_cot
-11,Question: Edward C. Hugger and Alexander Acosta served at appointees for what job?,qwen25_72b_instruct
+11,Question: Edward C. Hugger and Alexander Acosta served at appointees for what job?,llama31_405b_instruct
 12,Question: A Therapy was written and directed by what French-Polish film director who was born in Paris?,gpt_4o
 13,Question: What distinction about his birth makes the contemporary of Bill Pollack unique as a winner of the Formula One World Drivers' Championship?,qwen25_72b_instruct
 14,"Question: ""52nd Street"" is a 1978 album that earned two Grammy Awards for which piano-playing songwriter?",gpt_4o_mini_cot
@@ -31,7 +31,7 @@ id,question,pred
 29,Question: What type of musician does Beau Bokan and Jason Scheff have in common?,qwen25_32b_int4
 30,Question: What group of people are described as semi-nomadic and speak the Semitic language ? ,qwen25_72b_instruct
 31,Question: Pacific Mozart Ensemble performed which German composer's Der Lindberghflug in 2002?,qwen25_72b_instruct
-32,"Question: What was the real name of the author of the book ""Coraline"" has been compared to?",deepseek_chat
+32,"Question: What was the real name of the author of the book ""Coraline"" has been compared to?",llama31_405b_instruct
 33,Question: What book provided the foundation for Masters and Johnson's research team?,deepseek_chat
 34,Question: Are Jim Lindberg and Alison Moyet singers of the same nationality?,qwen25_72b_instruct
 35,"Question: Who wrote shorter stories, Raymond Carver or Lydia Davis?",qwen25_72b_instruct
@@ -70,8 +70,8 @@ id,question,pred
 68,Question: What was the highest ranking in the United States for a single written by an English multi-instrumentalist?,glm_4_air
 69,Question: Who aided the Colorado forces in the Uruguayan war?,glm_4_plus
 70,"Question: What town in Piscataquis County, Maine, housed the smallest railroad in the United States in 1890?",glm_4_plus
-71,Question: What retailer did Albert Heijn start up that eventually merged with the Delhaize Group?,deepseek_chat
-72,Question: What is the owner of Straight Blast Gym Ireland's birthday?,qwen25_72b_instruct
+71,Question: What retailer did Albert Heijn start up that eventually merged with the Delhaize Group?,llama31_405b_instruct
+72,Question: What is the owner of Straight Blast Gym Ireland's birthday?,llama31_405b_instruct
 73,Question: The Hip Hop Republican was credited with giving blacks emphasizing traditionalism and capitalism a sense of community during which presidential election?,gpt_4o_mini_cot
 74,"Question: Which of the two came out first, The Wind in the Willows or The Bears and I?",qwen25_72b_instruct
 75,Question: Does Frank Pepe Pizzeria Napoletana or Donatos Pizza have more locations?,qwen25_72b_instruct
@@ -87,7 +87,7 @@ id,question,pred
 85,"Question: St. John's College, Belize offers an education in a tradition in which what three subjects were the core?",qwen25_32b_int4
 86,"Question: What award was won by Niels Henrik David Bohr, a Danish physicist who established the Nordic Institute for Theoretical Physics?",deepseek_chat
 87,"Question: Which opera has more acts, Louise or Le roi malgré lui?",gpt_4o
-88,Question: What occupation is shared by both Marge Piercy and Richard Aldington?,qwen25_72b_instruct
+88,Question: What occupation is shared by both Marge Piercy and Richard Aldington?,qwen25_7b_instruct
 89,Question: Are Robert Philibosian and David Ignatius both politicians?,qwen25_32b_int4
 90,"Question: What is a popular industry in the neighborhood of Willow Vale, New South Wales?",llama31_70b_instruct
 91,Question: Buck Rogers XXVC is a published campaign setting or a homebrew campaign setting?,gpt_4o_mini_cot
@@ -105,7 +105,7 @@ id,question,pred
 103,Question:  Who was born first Doug Liman or Saul Metzstein?,qwen25_72b_instruct
 104,Question: Name any class of vertebrates within the class of Mammalia that has atleast 2 types of sensors?,gpt_4o_mini_cot
 105,"Question: Which American swimmer, coached by Ray Looze, won a bronze medal in the men's 100 meter breaststroke at the 2016 Summer Olympics?",gpt_4o_mini_cot
-106,Question: Chuck Berry House was where the 1957 hit single that reached what ranking on the R&B singles chart was composed?,gpt_4o
+106,Question: Chuck Berry House was where the 1957 hit single that reached what ranking on the R&B singles chart was composed?,llama31_405b_instruct
 107,Question: In what Mississippi county is the city that is located five miles west of the county seat of said county?,qwen25_72b_instruct
 108,Question: In which year was the King who made the 1925 Birthday Honours born?,qwen25_72b_instruct
 109,"Question: How long did The Shire of Flinders, which encompassed the extremity of the Mornington Peninsula located south-east of Melbourne, Australia, exist?",gpt_4o_mini_cot
@@ -120,8 +120,8 @@ id,question,pred
 118,Question: Which suburb is a soap opera featuring a character named Beverly Marshall set in?,gpt_4o
 119,Question: What sport does 200-foot game and Jonathan Toews have in common?,qwen25_72b_instruct
 120,Question: Was the band The Shins formed before the band Paramore?  ,gpt_4o
-121,Question: What profession does John Lanchester and Alan Dean Foster have in common?,qwen25_72b_instruct
-122,Question: What is the nationality of the most praised player in the 2002–03 Olympique de Marseille season?,qwen25_72b_instruct
+121,Question: What profession does John Lanchester and Alan Dean Foster have in common?,qwen25_7b_instruct
+122,Question: What is the nationality of the most praised player in the 2002–03 Olympique de Marseille season?,llama31_405b_instruct
 123,"Question: Where is the airline company that operated United Express Flight 3411 on April 9, 2017 on behalf of United Express headquartered?",gpt_4o
 124,"Question: What actor iin the 1999 remake of ""The Mummy"" appears in Drool?",llama31_70b_instruct
 125,Question: Said Fazal Akbar was appointed Governor by the President of Afghanistan that served until what day?,glm_4_plus
@@ -146,7 +146,7 @@ id,question,pred
 144,"Question: Renamed in 2014, what was the vehicle offered as a prize to contestants on the first season of The Amazing Race Canada?",glm_4_plus
 145,"Question: ""Clydebuilt"" is on the south bank of what river?",deepseek_chat
 146,Question: Extract starred what American actress who is known for her work on Saturday Night Live from 2005-2012?,gpt_4o
-147,"Question: Aside from the Ivorian who was born in 1986, what other big name footballer has gone through the FC Bibo?",qwen25_72b_instruct
+147,"Question: Aside from the Ivorian who was born in 1986, what other big name footballer has gone through the FC Bibo?",llama31_405b_instruct
 148,Question: Was Atom Egoyans biggest commercial success on stage or on film?,glm_4_air
 149,Question: Were Shadows Over Camelot and Battle Sheep released by the same publisher?,gpt_4o_mini_cot
 150,Question: What is a common feature of both the Iron Rattler's inversion and a barrel roll?,gpt_4o
@@ -159,14 +159,14 @@ id,question,pred
 157,Question: In what city did Brian Mannal convene when he was a member of the 188th and 189th General Court?,gpt_4o
 158,"Question: Predelta National Park is located in which area of Argentina comprising of the provinces Misiones, Entre Ríos and Corrientes?",glm_4_plus
 159,Question: Matt Doheny lost his primary race to what current youngest woman ever elected to Congress?,gpt_4o_mini_cot
-160,Question: Who portrays Rachel Zane on the American legal comedy-drama that airs on USA Network?,gpt_4o_mini_cot
+160,Question: Who portrays Rachel Zane on the American legal comedy-drama that airs on USA Network?,llama31_405b_instruct
 161,"Question: My Babysitter's a Vampire was created by Fresh TV, who also created which Canadian animated sitcom which premiered in Canada on November 7, 2004 on Teletoon?",deepseek_chat
 162,"Question: Which American novelist was notable primarily for publishing science fiction, Allen Drury or Philip K. Dick?",qwen25_72b_instruct
 163,"Question: Which of Mabel Keyes Babcock's distant relatives wrote ""Of Plymouth Plantation"" and served as Governor of the Plymouth Colony? ",qwen25_72b_instruct
 164,Question: Are Bangkok Girl and Home both horror movies?,gpt_4o
 165,Question: What was the other name for the war between the Cherokee people and white settlers in 1793?,qwen25_72b_instruct
 166,"Question: Who was born first, Susan Oliver or W. S. Van Dyke?",qwen25_72b_instruct
-167,Question: The King of Hollywood starred in what 1932 American pre-Code dram film?,deepseek_chat
+167,Question: The King of Hollywood starred in what 1932 American pre-Code dram film?,llama31_405b_instruct
 168,"Question: The composer of the music for the ballet ""The Seasons""  was the director of what organization from 1905 to 1928?",qwen25_72b_instruct
 169,Question: When did Peter Capaldi play the role of Mr. Curry in Paddington 2?,glm_4_air
 170,"Question: During the 2004-05 Atlanta Hawks season, the team acquired a former professional basketball player, who is the current head coach of what team?",gpt_4o
@@ -283,13 +283,13 @@ id,question,pred
 281,"Question: Which of the starting pitchers for Team USA in the Baseball at the 2000 Summer Olympics was not born August 29, 1977?",gpt_4o
 282,"Question: Which university is this American philosopher, theologian, and Christian apologist, who supports theistic science, professor at?",qwen25_72b_instruct
 283,"Question: Which Oxford University graduate did Midge Mackenzie interview in ""Women Talking""?",deepseek_chat
-284,Question: What friend of a performance artist and professional wrestler has performed in the role of Tony Clifton?,qwen25_72b_instruct
+284,Question: What friend of a performance artist and professional wrestler has performed in the role of Tony Clifton?,llama31_405b_instruct
 285,Question: Sachem Central School District encompasses the CDPs that include the hamlet in which New York county?,gpt_4o
 286,"Question: The ""unofficial national anthem"" of Australia is the basis for the nickname of what soccer team?",gpt_4o
-287,Question: What coastal resort is about 11 miles south-east of St Wilfrid's Church?,qwen25_72b_instruct
+287,Question: What coastal resort is about 11 miles south-east of St Wilfrid's Church?,llama31_405b_instruct
 288,Question: Nostie lies a short distance from one of Scotland's popular tourist attractions a small tidal island dominated by a picturesque castle that frequently apperas in what?,gpt_4o_mini_cot
 289,"Question: Between Greyia and Calibanus, which genus contains more species?",qwen25_72b_instruct
-290,"Question: Following The Simple Things a featurette directed by Burny Mattinson was produced, called what?",qwen25_72b_instruct
+290,"Question: Following The Simple Things a featurette directed by Burny Mattinson was produced, called what?",llama31_405b_instruct
 291,Question: What year did the biographical-comedy-crime film directed by Steven Soderbergh about the highest-level corporate executive whistleblower come out?,deepseek_chat
 292,"Question: Which record producer from Stockbridge, Georgia is the lead singer of Collective Soul?",gpt_4o_mini_cot
 293,Question: Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?,qwen25_72b_instruct
@@ -298,7 +298,7 @@ id,question,pred
 296,Question: Do both Adventist World and Girls' Life have a headquarter or editor based in Maryland?,gpt_4o
 297,Question: Which of the following was founded in 2003: University of Arizona or Presbyterian University College?,qwen25_72b_instruct
 298,Question: Katie sagona is known as what kind of actor because she was a child acting on stage or in motion pictures or television?,gpt_4o
-299,Question: What star of Parks and Recreation appeared in November?,deepseek_chat
+299,Question: What star of Parks and Recreation appeared in November?,llama31_405b_instruct
 300,"Question: What phone series serves as the successor to phones officially unveiled at the ""Samsung Unpacked 2015"" event?",gpt_4o_mini
 301,Question: Grafton and Carroll counties as well as the Pratt Family Camps border what lake in New Hampshire?,glm_4_plus
 302,Question: Kathleen Matthews holds what political position in the Maryland Democratic Party?,gpt_4o_mini_cot
@@ -313,7 +313,7 @@ id,question,pred
 311,Question: Victor Koman's Ph.D.  in Information Technology was conferred by a university located in which city ?,deepseek_chat
 312,Question: What profession does Leonty Magnitsky and Leonid Khachiyan have in common?,qwen25_72b_instruct
 313,"Question: Which Walt Disney film was produced first, The Apple Dumpling Gang or Something Wicked This Way Comes?",qwen25_72b_instruct
-314,"Question: In what year did the man who shot the Chris Stockley, of The Dingoes, die?",qwen25_72b_instruct
+314,"Question: In what year did the man who shot the Chris Stockley, of The Dingoes, die?",llama31_405b_instruct
 315,Question: The chairman of Westfield Corporation has a son who holds a Bachelor's degree in what?,deepseek_chat
 316,"Question: What Electoral Division in Victoria contained a suburb of Melbourne with a population of 25,147 at the 2016 Census?",llama31_70b_instruct
 317,Question: How many times did the man who coached the 1986-87 UNLV Runnin' Rebels fail to win 20 games in a season?,deepseek_chat
@@ -342,7 +342,7 @@ id,question,pred
 340,Question: Brian Olsen was the lst WEC heavyweight champion before the promotion company founded in what month purchased the organization?,gpt_4o_mini_cot
 341,"Question: Between Gareth Evans and Pierre Chenal, who's had a more diver career?",qwen25_72b_instruct
 342,Question: Which company used a voice actor who also voiced He-Man?,gpt_4o
-343,Question: What US Airways pilot famously made an emergency landing on the Hudson River and went on to become an Aviation and Safety Expert for CBS News?,deepseek_chat
+343,Question: What US Airways pilot famously made an emergency landing on the Hudson River and went on to become an Aviation and Safety Expert for CBS News?,llama31_405b_instruct
 344,Question: Watercliffe Meadow Primary Schools name change is an example of what term generally used to describe the avoidance of certain language?,llama31_70b_instruct
 345,Question: On what day did the battle that involved the Gin Drinkers Line end?,gpt_4o
 346,Question: The Hoch Conservatory had the teacher on-staff who was the first to publicly perform any work by which composer?,qwen25_72b_instruct
@@ -353,7 +353,7 @@ id,question,pred
 351,"Question: What organization is known for having a president who was convicted of felony charges that was harbored by his brother, another high ranking member?",gpt_4o_mini_cot
 352,"Question: Beyond the Hoax: Science, Philosophy, and Culture, is by what professor of mathematics at University College London?",deepseek_chat
 353,Question: Which town is named after the developers of Monmouth Heights at Manalapan?,gpt_4o
-354,"Question: ""This Ole House"" topped the UK chart in 1981 in a recording by a platinum-selling British rock and roll singer whose recording and performing career began when? ",deepseek_chat
+354,"Question: ""This Ole House"" topped the UK chart in 1981 in a recording by a platinum-selling British rock and roll singer whose recording and performing career began when? ",llama31_405b_instruct
 355,Question: which nuclear reservation in the United States  did  the U.S. Atomic Energy Commission acquired Meyers Mill  as part of ,glm_4_air
 356,Question: Which Sudanese-born Australian professional basketball player for the Milwaukee Bucks exemplifies that players do not have to play at least a year in college basketball before being drafted into the NBA?,gpt_4o
 357,Question: Who was one of the star in the South Korean horror romantic comedy film of Hwang In-ho?,gpt_4o
@@ -373,7 +373,7 @@ id,question,pred
 371,Question: Dangerous is a book by which political commentator?,gpt_4o
 372,Question: In which Austrian concentration camp was German musician Wilhelm Heckmann (1897-1995) imprisoned?,deepseek_coder
 373,Question: Where is the group of islands named after Purdue University's professor of forest ecology from 1947 to 1973?,gpt_4o_mini_cot
-374,Question: In what mountain range that extends through multiple countries is there a mountain that lies southeast of Jacabamba?,gpt_4o_mini_cot
+374,Question: In what mountain range that extends through multiple countries is there a mountain that lies southeast of Jacabamba?,llama31_405b_instruct
 375,Question: Who was born first Am Rong or Ava DuVernay ?,qwen25_72b_instruct
 376,Question: Horse the blind is known for nintendocore which emerged from hardcore punk and what genre?,deepseek_chat
 377,"Question: When was the American actor, film director which  Dana Brunetti is the president of his company born ",deepseek_chat

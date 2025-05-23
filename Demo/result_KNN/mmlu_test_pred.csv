@@ -451,7 +451,7 @@ Choices:
 A. Equivocation
 B. Fallacy of Division
 C. Appeal to Authority
-D. Denying the Antecedent",qwen25_72b_instruct
+D. Denying the Antecedent",qwen25_7b_instruct
 64,"About: global_facts
 Question: Consider the following statements: (1) As countries get richer, the population tends to report higher average life satisfaction. (2) Important life events such as marriage or divorce do affect our happiness, but have surprisingly little long-term impact. Which of these statements is True/False, as of 2020?
 Choices:
@@ -788,7 +788,7 @@ Choices:
 A. The process is exothermic.
 B. The process does not involve any work.
 C. The entropy of the system increases.
-D. The total entropy of the system plus surroundings increases.",qwen25_72b_instruct
+D. The total entropy of the system plus surroundings increases.",llama31_405b_instruct
 111,"About: philosophy
 Question: According to Hobbes, the definition of injustice is _____.
 Choices:
@@ -863,7 +863,7 @@ Choices:
 A. Yes, he was insane and could not have given a voluntary confession.
 B. Yes, the police overreached by not having him mentally evaluated before questioning him.
 C. No, there was no police misconduct or overreaching, and as a result the confession is voluntary.
-D. No, a confession is admissible when accompanied by actions by the defendant that prove the truth of the statements.",qwen25_32b_int4
+D. No, a confession is admissible when accompanied by actions by the defendant that prove the truth of the statements.",llama31_405b_instruct
 121,"About: jurisprudence
 Question: The distinction between general and particular jurisprudence was recognized by
 Choices:
@@ -1234,7 +1234,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",ministral_8b_instruct_2410
+D. Not wrong, Not wrong",llama31_405b_instruct
 172,"About: professional_medicine
 Question: A male stillborn is delivered at 32 weeks' gestation to a 30-year-old woman. The pregnancy was complicated by oligohydramnios. Examination of the stillborn shows the absence of a urethral opening. Which of the following additional findings is most likely in this stillborn?
 Choices:
@@ -1360,7 +1360,7 @@ Choices:
 A. The victim, who was the defendant's brother, suffered from an incurable case of cancer and asked the defendant to kill him to put an end to his pain and suffering.
 B. The killing was not done with premeditation or deliberation.
 C. The defendant intended to kill himself, but the bullet grazed his head and struck and killed the victim.
-D. The defendant intended to kill another man, but the victim unknowingly stepped in front of the other man and was struck and killed by the bullet.",qwen25_72b_instruct
+D. The defendant intended to kill another man, but the victim unknowingly stepped in front of the other man and was struck and killed by the bullet.",llama31_405b_instruct
 190,"About: high_school_chemistry
 Question: A solution of sulfurous acid, H2SO3, is present in an aqueous solution. Which of the following represents the concentrations of three different ions in solution?
 Choices:
@@ -1550,7 +1550,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 215,"About: elementary_mathematics
 Question: Which algebraic expression represents four times the quantity 22 less than x?
 Choices:
@@ -1691,7 +1691,7 @@ Choices:
 A. 41%
 B. 56%
 C. 71%
-D. 86%",qwen25_72b_instruct
+D. 86%",llama31_405b_instruct
 235,"About: miscellaneous
 Question: What kind of flying contraption is featured in the movie 'Chitty Chitty Bang Bang'?
 Choices:
@@ -2342,7 +2342,7 @@ Choices:
 A. Inability to vaccinate in some countries
 B. Poor quality (unsafe) vaccines
 C. Genetic variation
-D. Expense",qwen25_72b_instruct
+D. Expense",qwen25_7b_instruct
 323,"About: high_school_microeconomics
 Question: Compared to perfect competition in the long run, monopoly has
 Choices:
@@ -2709,7 +2709,7 @@ Choices:
 A. the customer's answer was invited by the supermarket's attorney's question.
 B. the customer's answer was based on firsthand knowledge.
 C. the customer's answer was a statement of recent perception.
-D. the customer's answer was a present sense impression.",gpt_4o
+D. the customer's answer was a present sense impression.",llama31_405b_instruct
 375,"About: college_biology
 Question: In eukaryotic photosynthetic cells, which of the following occurs when electrons flow cyclically through the electron transport chain associated with photosystem I?
 Choices:
@@ -2872,7 +2872,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 398,"About: moral_disputes
 Question:  In satisfying Kant's Humanity formulation of the categorical imperative, we are obligated to adopt two very general goals: the goal of promoting the (morally permissible) ends of others and the goal of
 Choices:
@@ -3508,7 +3508,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 485,"About: philosophy
 Question: Moral theories that say that the rightness of actions depends solely on their consequences are _____.
 Choices:
@@ -4299,7 +4299,7 @@ Choices:
 A. via a cotransport mechanism with carnosine.
 B. via an active transport mechanism.
 C. via a protein transporter molecule.
-D. by simple diffusion.",qwen25_72b_instruct
+D. by simple diffusion.",llama31_405b_instruct
 589,"About: computer_security
 Question: The ______________ can cost you money, by sending text messages from your mobile phone numbers.
 Choices:
@@ -4334,7 +4334,7 @@ Choices:
 A. 0
 B. 4
 C. 2
-D. 6",qwen25_72b_instruct
+D. 6",qwen25_7b_instruct
 594,"About: miscellaneous
 Question: In the Arthurian legend who is married to Guinevere?
 Choices:
@@ -4572,7 +4572,7 @@ Choices:
 A. 0
 B. 1
 C. -1
-D. 12",qwen25_72b_instruct
+D. 12",llama31_405b_instruct
 628,"About: professional_psychology
 Question: A measure of __________ would be most useful for determining the likelihood that employees will remain on the job for a long period of time.
 Choices:
@@ -4586,7 +4586,7 @@ Choices:
 A. No contract was formed because the offer failed to state an expiration date.
 B. No contract was formed because Sands received the revocation of the offer before Sands accepted the offer
 C. A contract was formed on the day Jackson received Sands’ acceptance
-D. A contract was formed on the day Sands mailed the acceptance to Jackson",ministral_8b_instruct_2410
+D. A contract was formed on the day Sands mailed the acceptance to Jackson",qwen25_7b_instruct
 630,"About: high_school_psychology
 Question: Of the following, which is characteristic of formal operational thinking?
 Choices:
@@ -4734,7 +4734,7 @@ Choices:
 A. The surface water cools.
 B. The surface water warms.
 C. The surface water temperature remains unchanged.
-D. The pH of the remaining water decreases.",qwen25_72b_instruct
+D. The pH of the remaining water decreases.",llama31_405b_instruct
 651,"About: high_school_psychology
 Question: A person who experiences flashbacks and nightmares after being involved in a serious car accident is likely to be diagnosed with which psychological disorder?
 Choices:
@@ -4808,7 +4808,7 @@ Choices:
 A. Acculturation
 B. Collective behavior
 C. Social stratification
-D. Social mobility",qwen25_32b_int4
+D. Social mobility",llama31_405b_instruct
 661,"About: moral_scenarios
 Question: For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | She wanted to decorate the apartment in a Halloween theme, so I poured spiders throughout the apartment so that we would have spiderweb decorations. Scenario 2 | I put rolled oats in a bowl in the microwave and heated it.
 Choices:
@@ -4822,7 +4822,7 @@ Choices:
 A. It ignores the possibility that homosexuality is a lifestyle choice.
 B. It assumes that all innate desires are good ones.
 C. It is equivalent to recognizing that homosexuality is unusual.
-D. None of the above",deepseek_chat
+D. None of the above",llama31_405b_instruct
 663,"About: professional_psychology
 Question: Of the following, the best way to increase the amount of helping behavior within a community is to
 Choices:
@@ -4871,7 +4871,7 @@ Choices:
 A. inform the client of the limits of confidentiality and report the unethical behavior.
 B. inform the client of the limits of confidentiality and contact the other psychologist.
 C. discuss the client's options with her and maintain her confidentiality unless she signs a release.
-D. contact the Ethics Committee to determine what the appropriate steps would be in this situation.",gpt_4o_mini_cot
+D. contact the Ethics Committee to determine what the appropriate steps would be in this situation.",qwen25_7b_instruct
 670,"About: high_school_physics
 Question: An ideal battery of constant voltage V supplies current to a circuit that has total resistance R. If R is doubled, what will happen to the total power dissipated by the circuit?
 Choices:
@@ -5196,7 +5196,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",gpt_4o
+D. Not wrong, Not wrong",llama31_405b_instruct
 716,"About: human_sexuality
 Question: Alexander the Great was probably
 Choices:
@@ -5395,7 +5395,7 @@ Choices:
 A. Single drugs are not completely inhibitory
 B. Mutations negate the effect of one drug
 C. Combinations of antibiotics are effective versus TB
-D. The virus cannot mutate vs a combination",qwen25_72b_instruct
+D. The virus cannot mutate vs a combination",qwen25_7b_instruct
 744,"About: professional_psychology
 Question: ___________ is caused by an abnormal accumulation of cerebrospinal fluid in the ventricles.
 Choices:
@@ -5445,7 +5445,7 @@ Choices:
 A. Reduction of triglycerides
 B. Hypoglycaemia
 C. increase of insulin sensitivity
-D. help controlling hypertension",qwen25_72b_instruct
+D. help controlling hypertension",qwen25_7b_instruct
 751,"About: us_foreign_policy
 Question: What led Britain to impose new taxes on their American colonies?
 Choices:
@@ -5783,7 +5783,7 @@ Choices:
 A. 29%
 B. 49%
 C. 69%
-D. 89%",qwen25_72b_instruct
+D. 89%",llama31_405b_instruct
 798,"About: logical_fallacies
 Question: _Ad populum_. is another name for which fallacy?
 Choices:
@@ -5889,7 +5889,7 @@ Choices:
 A. $145,600
 B. $161,200
 C. $166,400
-D. $182,000",gpt_4o_mini_cot
+D. $182,000",qwen25_7b_instruct
 813,"About: marketing
 Question:  These sell directly to end consumers and may purchase directly from manufacturers and/or deal with wholesalers:
 Choices:
@@ -6074,7 +6074,7 @@ Choices:
 A. The mechanism by which non-esterified fatty acids are taken up by cells is by diffusion only.
 B. The mechanism by which non-esterified fatty acids are taken up by cells is by a combination of diffusion and carrier-mediated transport involving fatty acid binding, translocase and transport proteins.
 C. The mechanism by which non-esterified fatty acids are taken up by cells is by a combination of diffusion and carrier-mediated transport involving fatty acid esterification, synthesis and transport proteins.
-D. The mechanism by which non-esterified fatty acids are taken up by cells is by carrier-mediated transport only involving fatty acid binding, translocase and transport proteins.",qwen25_72b_instruct
+D. The mechanism by which non-esterified fatty acids are taken up by cells is by carrier-mediated transport only involving fatty acid binding, translocase and transport proteins.",llama31_405b_instruct
 837,"About: nutrition
 Question: Risk assessment is applied to data on toxicity and human exposure to:
 
@@ -6229,7 +6229,7 @@ Choices:
 A. pay that amount to its trading partners.
 B. have a positive value of equal magnitude on its capital account.
 C. depreciate its currency.
-D. appreciate its currency.",qwen25_72b_instruct
+D. appreciate its currency.",llama31_405b_instruct
 858,"About: moral_scenarios
 Question: For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | During the pandemic, I held a party with my friends in person. Scenario 2 | I tore down the birthday decorations for tomorrow.
 Choices:
@@ -6532,7 +6532,7 @@ Choices:
 A. Before antiretroviral drugs are started
 B. After antiretroviral drugs are started
 C. Concurrently with antiretroviral drugs
-D. Doesn’t make any difference",qwen25_72b_instruct
+D. Doesn’t make any difference",qwen25_7b_instruct
 899,"About: college_medicine
 Question: Prosthetic groups are:
 Choices:
@@ -6742,7 +6742,7 @@ Choices:
 A. the judge has a reputation for dishonesty in the community.
 B. the judge was convicted of bribery three years earlier.
 C. the judge, though not convicted, embezzled money from a former employer before being elected to the bench.
-D. the judge was convicted for a felony assault 12 years earlier.",gpt_4o_mini_cot
+D. the judge was convicted for a felony assault 12 years earlier.",llama31_405b_instruct
 928,"About: clinical_knowledge
 Question: Embedded in the inner membrane of the mitochondrion are:
 Choices:
@@ -6833,7 +6833,7 @@ Choices:
 A. Canton Ohio
 B. Cooperstown New York
 C. Springfield Massachusetts
-D. Lawrence Kansas",qwen25_72b_instruct
+D. Lawrence Kansas",llama31_405b_instruct
 941,"About: nutrition
 Question: Which of the following is not a function of vitamin A
 
@@ -7209,7 +7209,7 @@ Choices:
 A. Jerome studies calculus
 B. Jerome studies Latin
 C. Jerome studies both calculus and Latin
-D. Jerome studies either calculus or Latin",qwen25_72b_instruct
+D. Jerome studies either calculus or Latin",qwen25_7b_instruct
 992,"About: high_school_geography
 Question: The theory that cities grow outward from a core utilizing several nodes of growth was proposed by
 Choices:
@@ -7272,7 +7272,7 @@ Choices:
 A. The law is not valid unless it is formally enacted.
 B. Law has lexical priority over morality.
 C. An unjust law is not law.
-D. No-one is above the law.",qwen25_72b_instruct
+D. No-one is above the law.",llama31_405b_instruct
 1001,"About: human_aging
 Question: Quantitative analyses of TV shows have shown that
 Choices:
@@ -7605,7 +7605,7 @@ Choices:
 A. Absences
 B. Productivity
 C. Accidents
-D. Salary",qwen25_72b_instruct
+D. Salary",llama31_405b_instruct
 1048,"About: computer_security
 Question: A digital signature needs a
 Choices:
@@ -7773,7 +7773,7 @@ Choices:
 A. Yes, because of the doctrine of vicarious liability.
 B. Yes, because the employer owned the truck.
 C. No, because the employee was not within the scope of his employment.
-D. No, because liability cannot be imputed from one person to another.",llama31_70b_instruct
+D. No, because liability cannot be imputed from one person to another.",llama31_405b_instruct
 1068,"About: nutrition
 Question: Which vitamins are most likely to be lacking in a vegan diet?
 
@@ -7844,7 +7844,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 1078,"About: high_school_psychology
 Question: Which of the following are included in the peripheral nervous system?
 Choices:
@@ -8310,7 +8310,7 @@ Choices:
 A. is a secondary growth cartilage.
 B. influences the position of the viscerocranium.
 C. ceases activity at 7 years of age.
-D. can be reactivated in patients affected by acromegaly.",qwen25_72b_instruct
+D. can be reactivated in patients affected by acromegaly.",qwen25_7b_instruct
 1143,"About: high_school_european_history
 Question: This question refers to the following information.
 The pair of excerpts below is written by explorer Christopher Columbus and the Dominican Bishop of Chiapas, Mexico, Bartholomew de las Casas.
@@ -8458,7 +8458,7 @@ Choices:
 A. granted, because the guilty verdict is plain error that adversely affects the defendant's constitutional rights.
 B. granted, because the verdicts are legally inconsistent and should lead to an acquittal of both charges.
 C. denied, because the verdicts do not amount to a reversible error.
-D. denied, because the defendant's proper remedy is to seek an appellate review for a non-constitutional error.",deepseek_chat
+D. denied, because the defendant's proper remedy is to seek an appellate review for a non-constitutional error.",llama31_405b_instruct
 1163,"About: college_biology
 Question: In garden peas, the allele for tall plants (D) is completely dominant to the allele for dwarf plants (d) and the allele for violet flower color (W) is completely dominant to the allele for white flower color (w). In a cross between a tall violet plant, with the genotype DDWw, and a dwarf white plant, what phenotypic ratio of the progeny would be expected from this cross?
 Choices:
@@ -8770,7 +8770,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_32b_int4
+D. Not wrong, Not wrong",llama31_405b_instruct
 1207,"About: astronomy
 Question: Where are the Trojan asteroids located?
 Choices:
@@ -9023,7 +9023,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 1243,"About: world_religions
 Question: Pure Land Buddhism belongs to which school?
 Choices:
@@ -9129,7 +9129,7 @@ Choices:
 A. The bank can foreclose only on lot 3 because ownership to that parcel is retained by the landowner, the original mortgagor.
 B. The bank has the option of foreclosing on parcels 1, 2, or 3 because the mortgage covered the entire three-acre tract.
 C. The bank must first foreclose on lot 3, and if the proceeds are insufficient, then the mortgagee may foreclose against lots 1 and 2 in the inverse order of their alienation.
-D. The bank can foreclose on lot 3, but not on lots I and 2 unless the friend and the brother assumed the mortgage when they purchased their land from the landowner.",qwen25_72b_instruct
+D. The bank can foreclose on lot 3, but not on lots I and 2 unless the friend and the brother assumed the mortgage when they purchased their land from the landowner.",llama31_405b_instruct
 1257,"About: professional_law
 Question: Police received a tip from a reliable informant that a man was dealing cocaine from his home. Officers then submitted to a magistrate an affidavit setting forth circumstances showing probable cause for the issuance of a search warrant. The magistrate issued a search warrant for narcotics at the man's address. Police officers went to the man's home and rang the door bell. When no one answered, the police broke in and entered the dwelling. They searched the rooms on the first floor and found no incriminating evidence, then walked outside and noticed a separate entrance leading up to the second floor of the dwelling. They ascended the stairway and entered an upstairs bedroom. Inside the room the officers found a stash of cocaine lying on a dresser. As the officers were continuing their search of the bedroom, the defendant entered the room. The police asked the defendant if he was the man. The defendant identified himself and told the police that they were in his bedroom and he occupied the second floor of the dwelling. The defendant explained that the man resided on the first floor and his living quarters were separate from the defendant's. Nonetheless, the defendant was placed under arrest and charged with possession of cocaine. The defendant has filed a motion to exclude the cocaine from being admitted into evidence. The defendant's motion should be
 Choices:
@@ -9246,7 +9246,7 @@ Choices:
 A. 24 hours.
 B. 36 hours.
 C. 48 hours.
-D. 96 hours.",qwen25_72b_instruct
+D. 96 hours.",llama31_405b_instruct
 1273,"About: high_school_psychology
 Question: Which of the following approaches emphasizes the importance of people's feelings and views human nature as naturally positive and growth seeking?
 Choices:
@@ -9309,7 +9309,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 1282,"About: human_aging
 Question: The decline in working memory with advanced age seems to be due to
 Choices:
@@ -9432,7 +9432,7 @@ Choices:
 A. Social policies, Social programmes and Social impacts
 B. Social evaluations, Social programmes and Social impacts
 C. Social policies, Social evidencing and Social impacts
-D. Social policies, Social programmes and Social analysis",deepseek_chat
+D. Social policies, Social programmes and Social analysis",llama31_405b_instruct
 1299,"About: high_school_psychology
 Question: Research reveals that the most critical factor in Type A behavior associated with heart disease is
 Choices:
@@ -9486,7 +9486,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 1306,"About: business_ethics
 Question: The state of being unable to make an informed, reasoned decision about a product purchase is known as?
 Choices:
@@ -9623,7 +9623,7 @@ Choices:
 A. the manufacturer only.
 B. the manufacturer, even though it was unaware of the removal of the speed regulator.
 C. the operator only.
-D. both the manufacturer and the operator.",deepseek_chat
+D. both the manufacturer and the operator.",llama31_405b_instruct
 1325,"About: human_aging
 Question: Which of the following improves attitudes toward aging and older adults?
 Choices:
@@ -9900,7 +9900,7 @@ Choices:
 A. Verify inventory pledged under loan agreements by confirming the details with financial institutions.
 B. Inquire about the current status of transactions that were recorded on the basis of preliminary data.
 C. Compare the financial statements being reported on with those of the prior year.
-D. Trace information from shipping documents to sales invoices and sales journal transactions.",qwen25_72b_instruct
+D. Trace information from shipping documents to sales invoices and sales journal transactions.",llama31_405b_instruct
 1363,"About: public_relations
 Question: In the public relations field, what is the most common threat to a client-firm relationship?
 Choices:
@@ -11436,7 +11436,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 1572,"About: high_school_world_history
 Question: This question refers to the following information.
 Yi Yin sacrificed to the former king, and presented the heir-king reverently before the shrine of his grandfather. . . . Yi Yin then clearly described the virtue of the Meritorious Ancestor for the instruction of the young king.
@@ -11483,7 +11483,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",gpt_4o_mini_cot
+D. Not wrong, Not wrong",llama31_405b_instruct
 1578,"About: professional_accounting
 Question: Gulde’s tax basis in Chyme Partnership was $26,000 at the time Gulde received a liquidating distribution of $12,000 cash and land with an adjusted basis to Chyme of $10,000 and a fair market value of $30,000. Chyme did not have unrealized receivables, appreciated inventory, or properties that had been contributed by its partners. What was the amount of Gulde’s basis in the land?
 Choices:
@@ -11664,7 +11664,7 @@ Choices:
 A. most trainees have improved, but relative standing is generally maintained
 B. primarily low-ability trainees have improved in performance
 C. primarily high-ability trainees have improved in performance
-D. all trainees are at the same performance level",qwen25_72b_instruct
+D. all trainees are at the same performance level",llama31_405b_instruct
 1603,"About: professional_medicine
 Question: A 72-year-old man comes to the physician because of a 7-month history of leg weakness and dry eyes and mouth. He also has had a 10.4-kg (23-lb) weight loss over the past 4 months despite no change in appetite. He has smoked one and a half packs of cigarettes daily for 50 years. He drinks 4 oz of alcohol daily. He has peptic ulcer disease and emphysema. Medications include cimetidine, theophylline, and low-dose prednisone. Examination shows mild ptosis. He has a barrelshaped chest. Breath sounds are distant. There is moderate weakness of proximal muscles of the lower extremities. Reflexes are absent. He has difficulty rising from a chair. Sensory examination shows no abnormalities. An x-ray shows a hyperinflated chest and a 3 x 4-cm mass in the right hilum. His neurologic findings are most likely due to a lesion involving which of the following?
 Choices:
@@ -11985,7 +11985,7 @@ Choices:
 A. external meaning
 B. god's plan
 C. internalmeaning
-D. meaning in an afterlife",qwen25_72b_instruct
+D. meaning in an afterlife",llama31_405b_instruct
 1647,"About: professional_medicine
 Question: A 15-year-old girl comes to the emergency department because, she says, ""something has been sticking out of my bottom since I had a bowel movement this morning."" She has not had previous episodes, although for more than 1 year she has had occasional difficulty passing stools. She is not in pain but is afraid to move her bowels for fear that the problem will worsen. She tells you that she moved away from home more than a year ago and that her parents contribute nothing to her support. She has a 6-month-old child and lives with a 28-year-old female cousin. She has never been married and does not work or attend school. She has no other symptoms. In order to follow the correct procedure for treating a minor, which of the following is the most appropriate step prior to evaluating this patient's rectal problem?
 Choices:
@@ -12300,7 +12300,7 @@ Choices:
 A. succeed, because the resident's remarks constituted slander per Se.
 B. succeed, because the lawyer found the remarks to be upsetting.
 C. not succeed, because the resident's remarks were a matter of personal opinion rather than statements of fact.
-D. not succeed, because the resident's remarks were not published or communicated to anyone but the plaintiff.",deepseek_chat
+D. not succeed, because the resident's remarks were not published or communicated to anyone but the plaintiff.",llama31_405b_instruct
 1691,"About: professional_medicine
 Question: A 52-year-old female presents to the office with the complaint of greenish discharge from her left nipple. There is no history of trauma or fever, and the patient is not currently using oral contraceptives nor is she on hormone replacement therapy. Her last pregnancy was approximately 20 years ago. Physical examination findings are normal except for the green discharge. The most likely cause of this patient's presenting complaint is
 Choices:
@@ -12423,7 +12423,7 @@ Choices:
 A. $7,000. 00
 B. $3,500. 00
 C. Quantum meruit for the reasonable value of his services rendered in installing the 150 fixtures.
-D. Nothing, because the electrician did not complete performance of the entire job.",glm_4_air
+D. Nothing, because the electrician did not complete performance of the entire job.",llama31_405b_instruct
 1708,"About: human_sexuality
 Question: An anatomical difference between males and females is:
 Choices:
@@ -12528,7 +12528,7 @@ Choices:
 A. A diagnostic algorithm
 B. Staff members
 C. A sampling frame
-D. All of the above",gpt_4o_mini_cot
+D. All of the above",llama31_405b_instruct
 1723,"About: college_medicine
 Question: The energy for all forms of muscle contraction is provided by:
 Choices:
@@ -12732,7 +12732,7 @@ Choices:
 A. a high proportion of the adults in the society subscribe to its principles.
 B. it is recognized as the moral code of the society.
 C. both a and b.
-D. neither a nor b.",qwen25_72b_instruct
+D. neither a nor b.",llama31_405b_instruct
 1751,"About: medical_genetics
 Question: A high blood ammonia level occurs in:
 Choices:
@@ -12927,7 +12927,7 @@ Choices:
 A. The performance of the roofer would be a constructive condition precedent to the performance by the homeowner.
 B. The performance by the homeowner would be an implied condition subsequent to the performance by the roofer.
 C. The performances of the homeowner and the roofer would be constructive concurrent conditions.
-D. The contract would be unenforceable, because it was oral.",gpt_4o_mini_cot
+D. The contract would be unenforceable, because it was oral.",llama31_405b_instruct
 1778,"About: moral_disputes
 Question:  The retributive theory of punishment does not claim that
 Choices:
@@ -13161,7 +13161,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 1811,"About: moral_scenarios
 Question: For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I sipped my water while teaching class. Scenario 2 | I included plenty of secret ingredients in my cakes like cinnamon and ginger.
 Choices:
@@ -13206,7 +13206,7 @@ Choices:
 A. The Kadi judgment demanded that UNSC resolutions are construed in accordance with human rights
 B. The Kadi judgment demanded that all UNSC resolutions be incorporated without any further implementing legislation
 C. The Kadi judgment required that important UNSC resolutions be transformed and not merely incorporated
-D. The Kadi judgment claimed that UNSC resolutions are not binding if they violate human rights",qwen25_72b_instruct
+D. The Kadi judgment claimed that UNSC resolutions are not binding if they violate human rights",qwen25_7b_instruct
 1817,"About: college_medicine
 Question: Fast-twitch fibres contain:
 Choices:
@@ -13773,7 +13773,7 @@ Choices:
 A. warm the water
 B. cool the water
 C. Both
-D. Neither",qwen25_72b_instruct
+D. Neither",llama31_405b_instruct
 1895,"About: high_school_chemistry
 Question: Which of the following is true for all bases?
 Choices:
@@ -13801,7 +13801,7 @@ Choices:
 A. Yes, because the defendant was expressing opinions more than factual assertions, and opinions in this context are constitutionally protected.
 B. Yes, because statements about religious beliefs or practices cannot be the subject of private defamation actions.
 C. No, because the preacher's allegations are based on serious factual distortions that will destroy her career if she doesn't get protection.
-D. No, because a defamation action cannot be subject to a motion to dismiss  the plaintiff is always entitled to present evidence to prove the tort.",qwen25_72b_instruct
+D. No, because a defamation action cannot be subject to a motion to dismiss  the plaintiff is always entitled to present evidence to prove the tort.",llama31_405b_instruct
 1899,"About: high_school_microeconomics
 Question: After Julia received a raise in her income, she began purchasing more ice cream cones and fewer popsicles. For Julia, popsicles
 Choices:
@@ -13964,7 +13964,7 @@ Choices:
 A. see the man only if she determines that their past relationship will not interfere with her objectivity.
 B. see the man only if their relationship ended more than two years ago and she determines that it will not interfere with her objectivity.
 C. see the man but discuss the potential for conﬂicts with him before beginning treatment.
-D. refer the man to a colleague.",qwen25_72b_instruct
+D. refer the man to a colleague.",qwen25_7b_instruct
 1921,"About: global_facts
 Question: What is the biggest cause of death in children under five years old (as of 2017)?
 Choices:
@@ -14055,7 +14055,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",glm_4_air
+D. Not wrong, Not wrong",llama31_405b_instruct
 1934,"About: high_school_european_history
 Question: This question refers to the following information.
 Read the following letter.
@@ -14270,7 +14270,7 @@ Choices:
 A. Use a logarithmic functional form instead of a linear one
 B. Add lags of the variables on the right hand side of the regression model
 C. Estimate the model in first differenced form
-D. Remove any large outliers from the data.",qwen25_72b_instruct
+D. Remove any large outliers from the data.",llama31_405b_instruct
 1963,"About: professional_law
 Question: A boyfriend and his girlfriend were attending a house party. While the party was in progress, a few teenagers from the neighborhood vandalized some of the cars parked outside the house. They broke the headlights and stole the battery from the boyfriend's car. When the party ended, the boyfriend and his girlfriend left the house and got into his car. The boyfriend, who was about to drive his girlfriend home, was unaware of what had happened. He tried to start the car, but it wouldn't turn on. Two police officers, who were parked outside the house, watched the boyfriend as he tried to start the car. They then approached the boyfriend and charged him with attempting to violate a local ordinance making it a misdemeanor to drive at night without headlights. The boyfriend's best defense to the charge is
 Choices:
@@ -14627,7 +14627,7 @@ Choices:
 A. inadmissible, because it is irrelevant.
 B. inadmissible, because it is not known whether the other shopper the woman was exercising reasonable care in riding the escalator.
 C. admissible, because it tends to prove that a dangerous condition was present at the time the woman's foot was crushed in the escalator.
-D. admissible, because of its probative value in establishing that the woman's injury was caused by the malfunctioning escalator.",qwen25_72b_instruct
+D. admissible, because of its probative value in establishing that the woman's injury was caused by the malfunctioning escalator.",llama31_405b_instruct
 2010,"About: college_medicine
 Question: Diisopropylfluorophosphate (DFP) binds to the active site of acetylcholinesterase (ACE) in the synapses of neurons. When DFP binds to ACE, the ACE enzyme is rendered permanently inactive. This makes DFP a potent toxin, with lethal amounts at less than 100 mg. The interaction between DFP and ACE can best be characterized as:
 Choices:
@@ -14681,7 +14681,7 @@ Choices:
 A. $100,000, because that was the contract price.
 B. $110,000 because of an unanticipated changeof circumstances after the parties had entered into their contract.
 C. only in quantum meruit, because of the doctrine of commercial frustration.
-D. only in quantum meruit, because by demanding $110,000 the alarm company repudiated its contract with the builder.",ministral_8b_instruct_2410
+D. only in quantum meruit, because by demanding $110,000 the alarm company repudiated its contract with the builder.",llama31_405b_instruct
 2017,"About: professional_law
 Question: An investor owned substantial oil and mineral interests in the Rocky Mountains. In July 1990, the investor acquired title to a 100-acre tract located just outside the city limits in a rural area. In 1997, the investor decided to sell his vast ranching and oil interests in the Rocky Mountains. In July, the investor conveyed the tract for a consideration of one dollar, receipt of which was acknowledged, ""to my nephew, his heirs, and assigns, but if my nephew's wife dies without issue, to my chef and her heirs and assigns. ""After taking possession of the 100-acre tract, the nephew discovered considerable oil reserves on the property. He then began oil drilling operations and removed large quantities of oil, which he sold. At no time did he give notice to the chef of his oil-drilling activities. Months passed before the chef learned that the nephew was selling oil from the drilling operations. The chef has now brought an action in equity for an accounting of the value of the oil removed and for an injunction against any further oil removal. If the nephew's wife died without issue before the beginning of the nephew's oil drilling operations, would this improve the likelihood of the chef's success than if the wife were still alive?
 Choices:
@@ -14807,7 +14807,7 @@ Choices:
 A. a distributionist.
 B. an abolitionist.
 C. a retentionist.
-D. a humanitarian.",deepseek_chat
+D. a humanitarian.",llama31_405b_instruct
 2035,"About: security_studies
 Question: What is Critical Security Studies?
 Choices:
@@ -15289,7 +15289,7 @@ Choices:
 A. It is spoken defamation.
 B. Plaintiff has to prove special damages, unless it falls into slander per se.
 C. The statement does not have to be published if it constitutes slander per se.
-D. There are four slander per se categories.",qwen25_32b_int4
+D. There are four slander per se categories.",llama31_405b_instruct
 2102,"About: professional_law
 Question: A defendant and a victim were roommates at college. The defendant was playing the role of a serial killer in the school play and asked the victim if she could leave their apartment for a few hours while she rehearsed. The victim agreed but returned to the apartment shortly thereafter because she was curious and wanted to see the defendant rehearse. The victim quietly came back into the apartment and hid behind some curtains in the dining room in order to watch the defendant rehearse. In her role, the defendant earned a large butcher's knife, with which she stabbed the curtains at her ""victim. "" Unknown to the defendant, the victim, who was hiding behind the curtain, was stabbed in the chest and killed. If the defendant is prosecuted for the victim's death, she should be found
 Choices:
@@ -15442,7 +15442,7 @@ Choices:
 A. C2H4O
 B. C3H6O
 C. C2H6O3
-D. C3H8O2",gpt_4o_mini_cot
+D. C3H8O2",llama31_405b_instruct
 2123,"About: professional_law
 Question: An investor owned a building in a city. This was the only piece of real estate that the investor owned. The three-story building had a store on the ground floor and apartments on the other two floors. The investor entered into a leasehold agreement with a tenant, who would lease the first floor, where she planned to open a sporting goods store. After identifying the parties, the operative words of the lease were as follows: ""Landlord hereby agrees to lease for the three years the first floor of his building in the city to tenant, reserving unto said landlord annual rental in the sum of $12,000 payable in advance in monthly installments of $1,000. ""After the tenant took possession and the investor accepted her rent payment for the first floor of the building, which of the following most accurately describes the legal relationship between the parties?
 Choices:
@@ -15456,7 +15456,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2125,"About: high_school_world_history
 Question: This question refers to the following information.
 The city of Ghana consists of two towns. One is inhabited by Muslims and has twelve mosques, salaried imams and muezzins, and jurists and scholars. In the environs are wells with sweet water, from which they drink and with which they grow vegetables. . . . The king's interpreters, the official in charge of his treasury and the majority of his ministers are Muslims. Only royalty may wear sewn clothes. All other people wear robes of cotton, silk, or brocade, according to their means. . . . The king adorns himself like a woman, wearing necklaces round his neck and bracelets on his forearms. . . . He sits . . . in a domed pavilion around which stand ten horses. When people who profess the same religion as the king approach him they fall on their knees and sprinkle dust on their heads, for this is their way of greeting him. As for the Muslims, they greet him only by clapping their hands. [The people's] religion is paganism and the worship of idols. . . . On every donkey-load of salt when it is brought into the country their king levies one golden dinar, and two dinars when it is sent out. From a load of copper the king's due is five mithqals, and from a load of other goods ten mithqals. . . . The nuggets found in all the mines of his country are reserved for the king, only this gold dust being left for the people. But for this the people would accumulate gold until it lost its value. Beyond this country lies another called Malal, the king of which was sincerely attached to Islam, while the common people of his kingdom remained polytheists. Since then their rulers have been given the title of al-musulmani .
@@ -15543,7 +15543,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 2137,"About: professional_law
 Question: The police interrogated a suspect regarding a series of burglaries. The suspect had attention deficit disorder, dyslexia and an IQ of 72. Prior to beginning they read a list of Miranda rights to him on a form that the suspect had in front of him. After the reading, he initialed each paragraph indicating he understood. At the bottom of the form was an express written waiver of the Miranda rights, which he signed. He had been interrogated in the past and was familiar with the procedure. During the four hours of interrogation he was given bathroom breaks, coffee, and a sandwich. At the end of the process, he made a logical and seemingly cogent confession to all of the burglaries in a taped statement. The defendant later moved to suppress the confession, arguing that he was coming down from drugs at the time and was intellectually unable to understand and comprehend the nature of the warnings or the waiver. What is the most likely decision of the court under the totality of the circumstances?
 Choices:
@@ -15602,7 +15602,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2145,"About: professional_law
 Question: A mother took her five-year-old child to a hospital emergency room for treatment. A doctor on the hospital staff molested the child while treating her. At the time, no one was in the treatment room except the doctor and the child; the mother had left the room to get a cup of coffee. Two weeks later, when the child told her mother what had occurred in the treatment room, the mother suffered severe emotional distress that caused her to become physically ill. In an action against the doctor by the mother on her own behalf to recover for intentional infliction of emotional distress, is the mother likely to prevail?
 Choices:
@@ -15958,7 +15958,7 @@ Choices:
 A. There is a cause of action because one who transmits a sexually communicable disease is strictly liable to all who contracts it.
 B. There is no cause of action because the wife assumed the risk that the paramour had a sexually transmittable disease.
 C. There is a cause of action because a person with a venereal disease has a duty to use reasonable care to avoid infecting others.
-D. There is no cause of action because the paramour's negligence was cut off by the wife's intervening negligence which became a superseding cause.",qwen25_72b_instruct
+D. There is no cause of action because the paramour's negligence was cut off by the wife's intervening negligence which became a superseding cause.",llama31_405b_instruct
 2190,"About: professional_law
 Question: A cashier worked part-time at a convenience store. As the cashier was sitting behind the cash register, he noticed a boy enter the store. While the boy walked through the store, the cashier watched him on a hidden camera located behind the cashier's counter. Thereupon, the cashier saw the boy pick up two packs of baseball cards and place them in his coat pocket. The boy then walked to the rear of the store, where he picked up a package of cupcakes. The boy took the cupcakes to the front counter and paid the cashier for the cupcakes only. The boy started to walk out of the store when the cashier said, ""Hey, kid, I'm not charging you for the baseball cards because you paid for the cupcakes. But next time I'm not going to let you get away with it. "" The baseball cards sold for $5 per pack. The boy has committed which, if any, crimes?
 Choices:
@@ -16422,7 +16422,7 @@ Choices:
 A. 0
 B. -2
 C. a-2
-D. (2+a)*-1",deepseek_chat
+D. (2+a)*-1",llama31_405b_instruct
 2253,"About: high_school_psychology
 Question: A medication prescribed by a psychiatrist for major depressive disorder would most likely influence the balance of which of the following neurotransmitters?
 Choices:
@@ -16593,7 +16593,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",glm_4_plus
+D. Not wrong, Not wrong",llama31_405b_instruct
 2277,"About: elementary_mathematics
 Question: What is the greatest common factor of 42 and 84?
 Choices:
@@ -16881,7 +16881,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2316,"About: high_school_mathematics
 Question: The graph of the equation $x + 2y + 3 = 0$ is perpendicular to the graph of the equation $ax + 2y + 3 = 0$. What is the value of $a$?
 Choices:
@@ -16895,7 +16895,7 @@ Choices:
 A. guilty of first-degree murder.
 B. guilty of second-degree murder.
 C. guilty of involuntary manslaughter.
-D. not guilty, because she had no legal duty to render assistance.",gpt_4o_mini_cot
+D. not guilty, because she had no legal duty to render assistance.",qwen25_7b_instruct
 2318,"About: professional_psychology
 Question: Electroconvulsive therapy (ECT) is most successfully used with
 Choices:
@@ -17060,7 +17060,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_32b_int4
+D. Not wrong, Not wrong",llama31_405b_instruct
 2340,"About: moral_disputes
 Question:  Leopold claims that history has shown that ""the conqueror role is eventually self-defeating."" It is self-defeating, in this view, because
 Choices:
@@ -17173,7 +17173,7 @@ Choices:
 A. 16
 B. 2\sqrt{2}
 C. 5
-D. 5+2\sqrt{13}",deepseek_chat
+D. 5+2\sqrt{13}",llama31_405b_instruct
 2356,"About: college_biology
 Question: The amino acid ornithine is regenerated during each turn of the urea cycle in a similar manner to which of the following participants in the citric acid cycle?
 Choices:
@@ -17208,7 +17208,7 @@ Choices:
 A. Ethically because it had been 6 months since termination
 B. Probably ethically since there was no coercion involved and the relationship was consensual
 C. Unethically, because she engaged in a sexual relationship with a former client, which is prohibited under any circumstances
-D. Ethically according to professional standards, but the psychologist exhibited poor professional judgment",qwen25_32b_int4
+D. Ethically according to professional standards, but the psychologist exhibited poor professional judgment",qwen25_7b_instruct
 2361,"About: professional_law
 Question: A commissioner of a sports league was charged with embezzling funds by increasing the amount of his allocated travel expenses without the approval of a majority of the team owners. In accordance with the bylaws of the league's charter, the commissioner was required to obtain the approval of at least half the owners before raising his expense allocation. At trial, the commissioner seeks to testify that his predecessor told him that he had authority under the league's charter to raise his expense allocation. The commissioner's testimony is
 Choices:
@@ -17299,7 +17299,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",gpt_4o
+D. Not wrong, Not wrong",llama31_405b_instruct
 2372,"About: professional_law
 Question: A landowner, her aunt, and her brother are the owners of three contiguous lots. A downward slope exists from the landowner's land to the brother'sland. The aunt, the owner in the middle of the three lots, was an amateur scientist. She began experimentation with electricity, using a lightning rod to conduct her experiments. Frequently, the electrical storms apparently originated in and over the area within which the brother's land is located. Because of this, the aunt would often angle her rod over the fence between her property and the brother's property to maximize her chances of success. After one entire rainy and windy season of experiments, the brother had grown tired of the aunt's lightning-rod intrusions because they interfered with his ham radio operations in his garage. The brother brought suit to enjoin such lightning-rod experiments. At trial, it was found that the aunt had been conducting her activities in the airspace directly above the brother's land. The court should
 Choices:
@@ -17359,7 +17359,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2380,"About: high_school_mathematics
 Question: Express as a common fraction the reciprocal of $0.\overline7$.
 Choices:
@@ -17448,7 +17448,7 @@ Choices:
 A. speak with the colleague privately to resolve this incident informally
 B. report the colleague to the appropriate local, state/provincial, or national ethics committee
 C. say nothing further regarding this incident unless there is 2 complaint from the client
-D. contact the colleague's client to offer assistance and/or professional advice",qwen25_32b_int4
+D. contact the colleague's client to offer assistance and/or professional advice",qwen25_7b_instruct
 2392,"About: logical_fallacies
 Question: The fallacy of composition is
 Choices:
@@ -17609,7 +17609,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2415,"About: clinical_knowledge
 Question: The genome is:
 Choices:
@@ -17800,7 +17800,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2442,"About: philosophy
 Question: Anscombe claims that the notion of moral obligation is derived from the concept of:
 Choices:
@@ -18031,7 +18031,7 @@ Choices:
 A. Genetic factors
 B. Lifestyle factors like not exercising
 C. Hormonal factors such as loss of estrogen
-D. Cohort factors",glm_4_plus
+D. Cohort factors",llama31_405b_instruct
 2475,"About: high_school_government_and_politics
 Question: Which of the following would occur if Congress were to pass legislation and declare a recess, and the president took no action on the bill within ten days of its passage?
 Choices:
@@ -18118,7 +18118,7 @@ Choices:
 A. does not influence exercise performance in events lasting less than 10 minutes.
 B. affects the resting muscle pH.
 C. may impair high intensity exercise performance.
-D. results in greater reliance on muscle glycogen during exercise.",qwen25_72b_instruct
+D. results in greater reliance on muscle glycogen during exercise.",qwen25_7b_instruct
 2487,"About: high_school_geography
 Question: Which of the following entities is a state?
 Choices:
@@ -18255,7 +18255,7 @@ Choices:
 A. the case lacks adequate ripeness.
 B. there is no case or controversy.
 C. the relief sought is essentially for an advisory opinion.
-D. the women's group lacks standing.",gpt_4o
+D. the women's group lacks standing.",llama31_405b_instruct
 2506,"About: professional_law
 Question: A woman was driving home after attending a concert. While talking on her cellphone, she momentarily took her eyes off the road. The woman then drove through a red light and struck a police car driven by a police officer, injuring him. At the time of the accident, the police officer was returning from an emergency dispatch. The police officer sued the woman to recover damages suffered in the auto accident. At trial, the police officer presented evidence that he was returning from an emergency scene when the woman drove through a red light and struck his patrol car. At the conclusion of the plaintiff's presentation of evidence, the woman moved for a summary judgment claiming the ""firefighter's rule"" barred recovery. The motion for summary judgment should be
 Choices:
@@ -18744,7 +18744,7 @@ Choices:
 A. transpiration
 B. respiration
 C. oxidation
-D. condensation",qwen25_72b_instruct
+D. condensation",qwen25_7b_instruct
 2572,"About: high_school_statistics
 Question: An experiment is to be conducted to determine whether taking fish oil capsules or garlic capsules has more of an effect on cholesterol levels. In past studies it was noted that daily exercise intensity (low, moderate, high) is associated with cholesterol level, but average sleep length (< 5, 5 - 8, > 8 hours) is not associated with cholesterol level. This experiment should be done
 Choices:
@@ -18993,7 +18993,7 @@ Choices:
 A. G is abelian
 B. G = {e}
 C. a^3 = e
-D. a^2 = a",deepseek_chat
+D. a^2 = a",qwen25_7b_instruct
 2606,"About: high_school_biology
 Question: A researcher conducts a survey of a biome and finds 35 percent more species than she has found in any other biome. Which biome is she most likely to be in?
 Choices:
@@ -19065,7 +19065,7 @@ Choices:
 A. complex cause
 B. hasty generalization
 C. post hoc
-D. division",qwen25_72b_instruct
+D. division",qwen25_7b_instruct
 2616,"About: human_sexuality
 Question: Stan is out having a few beers with some friends. Which of the following will be DECREASED if Stan only consumes 1 beer?
 Choices:
@@ -19147,7 +19147,7 @@ Choices:
 A. einkorn
 B. emmer
 C. teosinte
-D. legumes",qwen25_72b_instruct
+D. legumes",qwen25_7b_instruct
 2627,"About: miscellaneous
 Question: Which of the following has provided evidence that the Sun's atmosphere contains sodium atoms?
 Choices:
@@ -19189,7 +19189,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",llama31_70b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2633,"About: high_school_psychology
 Question: Tests that have been pretested with a sample of the population for whom the test is intended and have a uniform set of instructions and administration procedures are
 Choices:
@@ -19372,14 +19372,14 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 2659,"About: abstract_algebra
 Question: The set of all real numbers under the usual multiplication operation is not a group since
 Choices:
 A. multiplication is not a binary operation
 B. multiplication is not associative
 C. identity element does not exist
-D. zero has no inverse",deepseek_chat
+D. zero has no inverse",llama31_405b_instruct
 2660,"About: professional_psychology
 Question: In most cases, statutory responsibility for establishing minimal standards for professional competency to protect the public from harm rests with
 Choices:
@@ -19400,7 +19400,7 @@ Choices:
 A. 90% of students who study receive high grades.
 B. 90% of students who receive high grades study a lot.
 C. 90% of the variation in GPAs can be explained by variation in number of study hours per day.
-D. 81% of the variation in GPAs can be explained by variation in number of study hours per day.",qwen25_72b_instruct
+D. 81% of the variation in GPAs can be explained by variation in number of study hours per day.",llama31_405b_instruct
 2663,"About: professional_medicine
 Question: A 47-year-old woman comes to the physician because of persistent nonproductive cough for 6 weeks. She has not had fever or weight loss. She has hypertension treated with enalapril for the past 3 months. She does not smoke. There is no history of lung disease. She weighs 54 kg (120 lb) and is 163 cm (64 in) tall. Her temperature is 37°C (98.6°F), blood pressure is 130/80 mm Hg, pulse is 70/min, and respirations are 12/min. Examination and an x-ray of the chest show no abnormalities. Which of the following is the most likely mechanism of this patient's cough?
 Choices:
@@ -19512,7 +19512,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2678,"About: conceptual_physics
 Question: In the atomic nucleus, electrical forces tend to
 Choices:
@@ -19526,7 +19526,7 @@ Choices:
 A. speed test.
 B. achievement test.
 C. EQ test.
-D. aptitude test.",qwen25_72b_instruct
+D. aptitude test.",llama31_405b_instruct
 2680,"About: high_school_us_history
 Question: This question refers to the following information.
 ""I observe the great and wonderful mistake, both our own and our fathers, as to the civil powers of this world, acting in spiritual matters. I have read…the last will and testament of the Lord Jesus over many times, and yet I cannot find by one tittle of that testament that if He had been pleased to have accepted of a temporal crown and government that ever He would have put forth the least finger of temporal or civil power in the matters of His spiritual affairs and Kingdom. Hence must it lamentably be against the testimony of Christ Jesus for the civil state to impose upon the souls of the people a religion, a worship, a ministry, oaths (in religious and civil affairs), tithes, times, days, marryings, and buryings in holy ground…""
@@ -19827,7 +19827,7 @@ Choices:
 A. in glycolysis.
 B. in the conversion of fatty acids to acetyl CoA.
 C. in the tricarboxylic acid cycle (Krebs' cycle).
-D. in glycogenolysis.",glm_4_plus
+D. in glycogenolysis.",llama31_405b_instruct
 2717,"About: human_aging
 Question: High levels of social support are strongly associated with
 Choices:
@@ -19841,7 +19841,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",qwen25_72b_instruct
+D. Not wrong, Not wrong",llama31_405b_instruct
 2719,"About: professional_psychology
 Question: Self-instructional training of impulsive children involves helping them to
 Choices:
@@ -19993,7 +19993,7 @@ Choices:
 A. Inconsistent
 B. Consistent. Consistent valuation when U, W, and X are true and T is false
 C. Consistent. Consistent valuation when W and X are true and T and U are false
-D. Consistent. Consistent valuation when T and U are true and W and X are false",qwen25_72b_instruct
+D. Consistent. Consistent valuation when T and U are true and W and X are false",llama31_405b_instruct
 2739,"About: moral_disputes
 Question:  Kant argues that marriage allows spouses to treat each other not as mere means when engaging in sexual activity because
 Choices:
@@ -20033,7 +20033,7 @@ Choices:
 A. Wrong, Wrong
 B. Wrong, Not wrong
 C. Not wrong, Wrong
-D. Not wrong, Not wrong",deepseek_chat
+D. Not wrong, Not wrong",llama31_405b_instruct
 2744,"About: prehistory
 Question: Which subfield of anthropology aims to better understand the nearest living relatives of humans?
 Choices:

@@ -35,23 +35,32 @@ def solve_by_KNN(name, file_dictionary, k = 5):
 def evaluate_training_set(name, k=5):
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
     training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
-    # print(training_set.features.shape)
-    # print(test_set.features.shape)
-    best_k = KNN(training_set.features, training_set.features, k)
-    res = []
-    for i in range(training_set.size):
-        res.append(training_set.best_model(best_k[i]))
+    # print(training_set.size)
+    def split(N, eval_rate = 0.1):
+        np.random.seed(0)
+        N_eval = int(N * eval_rate)
+        idx_shuffle = np.arange(N)
+        np.random.shuffle(idx_shuffle)
+        return idx_shuffle[:N_eval], idx_shuffle[N_eval:]
+
+    eval_idx, train_idx = split(training_set.size)
+    # train_idx = np.arange(training_set.size)
+
     
-    training_set.evaluate(np.array(res))
-    training_set.evaluate([training_set.best_model()] * training_set.size)
+    best_k = KNN(training_set.features[train_idx,:], training_set.features[eval_idx,:], k)
+    res = []
+    for i in range(eval_idx.shape[0]):
+        res.append(training_set.best_model(train_idx[best_k[i]]))
+    return training_set.evaluate(np.array(res),idx=eval_idx)
+    # training_set.evaluate([training_set.best_model()] * training_set.size)
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
-    # solve_by_KNN(name_list[0])
+
+    k_list = [1101,201,1001,101,1501,1201,501]
     for i,name in enumerate(name_list):
-        res_name = solve_by_KNN(name,"./Demo/result_KNN")
-        # print(name)
-        # evaluate_training_set(name)
+        # print(name,evaluate_training_set(name, k = k_list[i]))
+        solve_by_KNN(name,f"./Demo/result_KNN")
     # x = np.array([-1,0,0,0,1,0]).reshape(3,2)
     # y = np.array([-1,-1,-1,1,1,-1,1,1]).reshape(4,2)
     # print(KNN(y,x,2))
