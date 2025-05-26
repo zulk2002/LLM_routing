@@ -84,4 +84,4 @@ if __name__ == "__main__":
     # print(tot_list)
 
     for i,name in enumerate(name_list):
-        solve_by_Kmeans(name,f"./Demo/res_Kmeans",k=k_list[i])
+        solve_by_Kmeans(name,f"./Demo/result_Kmeans",k=k_list[i])
