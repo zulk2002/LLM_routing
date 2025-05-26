@@ -48,7 +48,7 @@ class TrainingSet:
         # print(f"Percentage:{performance/opt_idx*100:.2f}")
         return performance/opt_idx
     
-    def split(self, seed=0, eval_rate = 0.1):
+    def split(self, seed=0, eval_rate = 0.2):
         np.random.seed(seed)
         N_eval = int(self.size * eval_rate)
         idx_shuffle = np.arange(self.size)

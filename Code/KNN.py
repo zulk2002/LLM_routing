@@ -29,29 +29,41 @@ def solve_by_KNN(name, file_dictionary, k = 5):
     test_set.save_res(res_names,f"{file_dictionary}/{name}_test_pred.csv")
     return res_names
 
-def evaluate_training_set(name, k=5):
+def evaluate_training_set(name, k=5, seed = 0):
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
     training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
     # print(training_set.size)
 
-    eval_idx, train_idx = training_set.split(seed=0,eval_rate=0.1)
+    eval_idx, train_idx = training_set.split(seed=seed)
     # train_idx = np.arange(training_set.size)
 
     
     best_k = KNN(training_set.features[train_idx,:], training_set.features[eval_idx,:], k)
-    res = []
-    for i in range(eval_idx.shape[0]):
-        res.append(training_set.best_model(train_idx[best_k[i]]))
-    return training_set.evaluate(np.array(res),idx=eval_idx)
+    res = [ training_set.best_model(train_idx[best_k[i]]) for i in range(eval_idx.shape[0])]
+    res_greedy = [training_set.best_model(train_idx)] * len(eval_idx)
+    return training_set.evaluate(np.array(res),idx=eval_idx) - training_set.evaluate(np.array(res_greedy),idx=eval_idx)
     # training_set.evaluate([training_set.best_model()] * training_set.size)
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
 
-    k_list = [1101,201,1001,101,1501,1201,501]
-    for i,name in enumerate(name_list):
-        solve_by_KNN(name,f"./Demo/result_KNN",k = k_list[i])
-        # print(evaluate_training_set(name,k=k_list[i]))
+    # k_list = [300,250,1001,101,1501,1201,501]
+    # for i,name in enumerate(name_list):
+    #     tot = 0
+    #     for seed in range(20):
+    #         tot += evaluate_training_set(name,k=k_list[i],seed=seed)
+    #         # print(name,evaluate_training_set(name,k=k_list[i]))
+    #     print(name,tot)
     # x = np.array([-1,0,0,0,1,0]).reshape(3,2)
     # y = np.array([-1,-1,-1,1,1,-1,1,1]).reshape(4,2)
     # print(KNN(y,x,2))
+
+    k_options = [900,1000,1100,1200]
+    # k_options = [180,190,200,210,220,240,250,260]
+    name = name_list[2]
+    for k in k_options:
+        tot = 0
+        for seed in range(20):
+            tot += evaluate_training_set(name,k=k,seed=seed)
+            # print(name,evaluate_training_set(name,k=k_list[i]))
+        print(name,tot)
