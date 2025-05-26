@@ -54,12 +54,12 @@ def evaluate_training_set(training_set:TrainingSet, seed = 0, k = 20):
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
-    k_option = range(10,30,5)
-    k_list = [3,3,3,3,3,11,1]
+    k_option = [14,15]
+    k_list = [3,3,3,3,3,13,2]
 
     # tot_list = []
     # for i,name in enumerate(name_list):
-    #     if i != 6:
+    #     if i != 5:
     #         continue
     #     for k in k_option:
     #         tot = 0
@@ -85,9 +85,3 @@ if __name__ == "__main__":
 
     for i,name in enumerate(name_list):
         solve_by_Kmeans(name,f"./Demo/res_Kmeans",k=k_list[i])
-        # training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
-        # test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
-        # training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
-        # test_set.read_feature(f"./Demo/data/features/{name}_test_pred.csv")
-        # acc = evaluate_training_set(training_set,k=k_list[i],seed=int(time.time()))
-        # print(name,acc)

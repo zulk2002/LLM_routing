@@ -10,10 +10,8 @@ def evaluate_training_set(name):
     # order = np.argsort(training_set.scores.sum(axis=0))
     # print(order)
 
-    res = []
-    for i in range(eval_idx.shape[0]):
-        res.append(training_set.best_model(train_idx))
-    return training_set.evaluate(np.array(res),idx=eval_idx)
+    res_greedy = [training_set.best_model(train_idx)] * len(eval_idx)
+    return training_set.evaluate(np.array(res_greedy),idx=eval_idx)
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]

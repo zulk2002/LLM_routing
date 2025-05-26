@@ -1,5 +1,6 @@
 from DataSet import TrainingSet, TestSet
 import numpy as np
+import time
 
 def l2_distance(features,x):
     n = features.shape[0]
@@ -46,8 +47,9 @@ def evaluate_training_set(name, k=5, seed = 0):
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
-
-    # k_list = [300,250,1001,101,1501,1201,501]
+    k_list = [300,250,1051,320,1060,800,700]
+    for i,name in enumerate(name_list):
+        solve_by_KNN(name,"./Demo/result_KNN",k=k_list[i])
     # for i,name in enumerate(name_list):
     #     tot = 0
     #     for seed in range(20):
@@ -58,12 +60,12 @@ if __name__ == "__main__":
     # y = np.array([-1,-1,-1,1,1,-1,1,1]).reshape(4,2)
     # print(KNN(y,x,2))
 
-    k_options = [900,1000,1100,1200]
-    # k_options = [180,190,200,210,220,240,250,260]
-    name = name_list[2]
-    for k in k_options:
-        tot = 0
-        for seed in range(20):
-            tot += evaluate_training_set(name,k=k,seed=seed)
-            # print(name,evaluate_training_set(name,k=k_list[i]))
-        print(name,tot)
+    # k_options = range(600,800,20)
+    # # k_options = [180,190,200,210,220,240,250,260]
+    # name = name_list[5]
+    # for k in k_options:
+    #     tot = 0
+    #     for seed in range(20):
+    #         tot += evaluate_training_set(name,k=k,seed=int(time.time()))
+    #         # print(name,evaluate_training_set(name,k=k_list[i]))
+    #     print(k,name,tot)
