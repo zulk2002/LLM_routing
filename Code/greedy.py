@@ -14,6 +14,9 @@ def evaluate_training_set(name):
 
     eval_idx, train_idx = split(training_set.size)
 
+    order = np.argsort(training_set.scores.sum(axis=0))
+    print(order)
+
     res = []
     for i in range(eval_idx.shape[0]):
         res.append(training_set.best_model(train_idx))

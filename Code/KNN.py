@@ -5,9 +5,6 @@ def l2_distance(features,x):
     n = features.shape[0]
     m = x.shape[0]
     dist_map = np.zeros((n,m))
-    # (x-y) ** 2 = x**2 + y**2 -2xy(dot)
-    # print(dist_map)
-    # print(np.sum(features**2, axis=1))
     dist_map += np.sum(features**2, axis=1).reshape(n,1)
     dist_map += np.sum(x**2, axis=1).reshape(1,m)
     dist_map -= 2*np.dot(features,x.T)
@@ -36,14 +33,8 @@ def evaluate_training_set(name, k=5):
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
     training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
     # print(training_set.size)
-    def split(N, eval_rate = 0.1):
-        np.random.seed(0)
-        N_eval = int(N * eval_rate)
-        idx_shuffle = np.arange(N)
-        np.random.shuffle(idx_shuffle)
-        return idx_shuffle[:N_eval], idx_shuffle[N_eval:]
 
-    eval_idx, train_idx = split(training_set.size)
+    eval_idx, train_idx = training_set.split(seed=0,eval_rate=0.1)
     # train_idx = np.arange(training_set.size)
 
     
@@ -59,8 +50,8 @@ if __name__ == "__main__":
 
     k_list = [1101,201,1001,101,1501,1201,501]
     for i,name in enumerate(name_list):
-        # print(name,evaluate_training_set(name, k = k_list[i]))
-        solve_by_KNN(name,f"./Demo/result_KNN")
+        solve_by_KNN(name,f"./Demo/result_KNN",k = k_list[i])
+        # print(evaluate_training_set(name,k=k_list[i]))
     # x = np.array([-1,0,0,0,1,0]).reshape(3,2)
     # y = np.array([-1,-1,-1,1,1,-1,1,1]).reshape(4,2)
     # print(KNN(y,x,2))
