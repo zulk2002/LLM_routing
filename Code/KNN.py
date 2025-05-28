@@ -2,6 +2,8 @@ from DataSet import TrainingSet, TestSet
 import numpy as np
 import time
 
+FEATURE = "features_mpnet"
+
 def l2_distance(features,x):
     n = features.shape[0]
     m = x.shape[0]
@@ -19,8 +21,8 @@ def KNN(features, x, k):
 def solve_by_KNN(name, file_dictionary, k = 5):
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
     test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
-    training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
-    test_set.read_feature(f"./Demo/data/features/{name}_test_pred.csv")
+    training_set.read_feature(f"./Demo/data/{FEATURE}/{name}_train.csv")
+    test_set.read_feature(f"./Demo/data/{FEATURE}/{name}_test_pred.csv")
     best_k = KNN(training_set.features, test_set.features, k)
     res = []
     for i in range(test_set.size):
@@ -32,7 +34,7 @@ def solve_by_KNN(name, file_dictionary, k = 5):
 
 def evaluate_training_set(name, k=5, seed = 0):
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
-    training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
+    training_set.read_feature(f"./Demo/data/{FEATURE}/{name}_train.csv")
     # print(training_set.size)
 
     eval_idx, train_idx = training_set.split(seed=seed)
@@ -45,27 +47,18 @@ def evaluate_training_set(name, k=5, seed = 0):
     return training_set.evaluate(np.array(res),idx=eval_idx) - training_set.evaluate(np.array(res_greedy),idx=eval_idx)
     # training_set.evaluate([training_set.best_model()] * training_set.size)
 
+def try_k(name_list:list[str], k_option:list, times:int = 20):
+    for i,name in enumerate(name_list):
+        for k in k_option:
+            tot = 0
+            for _ in range(times):
+                acc = evaluate_training_set(name,k=k,seed=int(time.time())+i)
+                tot += acc
+            print(f"dataset:{name}, k={k} average impove:{tot:.4f}")
+
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
     k_list = [300,250,1051,320,1060,800,700]
-    for i,name in enumerate(name_list):
-        solve_by_KNN(name,"./Demo/result_KNN",k=k_list[i])
     # for i,name in enumerate(name_list):
-    #     tot = 0
-    #     for seed in range(20):
-    #         tot += evaluate_training_set(name,k=k_list[i],seed=seed)
-    #         # print(name,evaluate_training_set(name,k=k_list[i]))
-    #     print(name,tot)
-    # x = np.array([-1,0,0,0,1,0]).reshape(3,2)
-    # y = np.array([-1,-1,-1,1,1,-1,1,1]).reshape(4,2)
-    # print(KNN(y,x,2))
-
-    # k_options = range(600,800,20)
-    # # k_options = [180,190,200,210,220,240,250,260]
-    # name = name_list[5]
-    # for k in k_options:
-    #     tot = 0
-    #     for seed in range(20):
-    #         tot += evaluate_training_set(name,k=k,seed=int(time.time()))
-    #         # print(name,evaluate_training_set(name,k=k_list[i]))
-    #     print(k,name,tot)
+    #     solve_by_KNN(name,"./Demo/result_KNN",k=k_list[i])
+    try_k(name_list,[50,100,300,800,1000])

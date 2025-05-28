@@ -16,6 +16,19 @@ class gb5:
     
 def evaluate_training_set(traing_set:TrainingSet, depth = 7, k = 5):
     eval_idx, train_idx = training_set.split(seed=0)
+    best_model = traing_set.best_model()
+    best_score = traing_set.scores[train_idx,best_model]
+    opt_score = np.max(traing_set.scores[train_idx,:],axis=1)
+    best_model_is_best = (best_score == opt_score)
+    classifier = xgb.XGBClassifier \
+    (
+        objective="binary:logistic",
+        eval_metric="logloss",
+        n_estimators=100
+    )
+    classifier.fit(traing_set.features[train_idx,:],best_model_is_best)
+    use_best_model = classifier.predict(traing_set.features[eval_idx,:])
+
     first_k = np.argsort(training_set.scores.sum(axis=0))[-k:]
     # print(first_5)
     model_list = [xgb.XGBRegressor(max_depth = depth) for _ in range(k)]
@@ -25,6 +38,9 @@ def evaluate_training_set(traing_set:TrainingSet, depth = 7, k = 5):
     res = []
     pred_list = [ model_list[i].predict(traing_set.features[eval_idx,:]) for i in range(k)]
     res = first_k[np.argmax(pred_list,axis=0)]
+
+    res = np.array(res)
+    res[use_best_model == 1] = best_model
     res_greedy = [training_set.best_model(train_idx)] * len(eval_idx)
     return training_set.evaluate(np.array(res),idx=eval_idx) - training_set.evaluate(np.array(res_greedy),idx=eval_idx)
 
