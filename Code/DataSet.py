@@ -7,12 +7,26 @@ class TrainingSet:
         self.file_path = file_path
         self.dataframe = pd.read_csv(file_path)
         self.size = self.dataframe.shape[0]
-        self.questions = self.dataframe.iloc[:,1].to_list() # could design a datasructure if needed
+        self.questions = self.dataframe.iloc[:,1].to_numpy() # could design a datasructure if needed
         self.scores = self.dataframe.iloc[:,2:22].to_numpy()
         self.opt_score = np.sum(np.max(self.scores,axis=1))
 
-    def read_feature(self,file_path):
+    def read_feature(self,file_path,tag_path=None):
         self.features = np.loadtxt(file_path, delimiter=",")
+        if tag_path is not None:
+            add_tag = self.read_tags(tag_path)
+            self.features = np.hstack([self.features, add_tag])
+    
+    def read_tags(self,file_path):
+        tags = np.loadtxt(file_path, delimiter=",")
+        def one_hot(arr:np.ndarray):
+            arr = arr.astype(int)
+            n_classes = np.max(arr)+1
+            one_hot = np.zeros((len(arr),n_classes))
+            one_hot[np.arange(len(arr)),arr] = 1
+            return one_hot
+        add_tag = one_hot(tags) if tags.ndim == 1 else np.hstack([one_hot(tags[:,0]),one_hot(tags[:,1])])
+        return add_tag
 
     def best_model(self, idx=None):
         idx = idx if idx is not None else np.arange(self.size)
@@ -38,7 +52,7 @@ class TrainingSet:
     def get_opt_score(self, idx):
         return np.sum(np.max(self.scores[idx,:],axis=1))
 
-    def evaluate(self, ans, idx=None):
+    def evaluate(self, ans, idx=None, absolute=False):
         idx = idx if idx is not None else np.arange(self.size)
         score_table = self.scores[idx,:]
         performance = np.sum(score_table[np.arange(len(ans)),ans])
@@ -46,7 +60,7 @@ class TrainingSet:
         # print(f"Opitmal score:{opt_idx}")
         # print(f"Your score:{performance}")
         # print(f"Percentage:{performance/opt_idx*100:.2f}")
-        return performance/opt_idx
+        return performance/opt_idx if absolute == False else performance
     
     def split(self, seed=0, eval_rate = 0.2):
         np.random.seed(seed)
@@ -62,12 +76,27 @@ class TestSet:
         self.file_path = file_path
         self.dataframe = pd.read_csv(file_path)
         self.size = self.dataframe.shape[0]
-        self.questions = self.dataframe.iloc[:,1].to_list()
+        self.questions = self.dataframe.iloc[:,1].to_numpy()
 
-    def read_feature(self,file_path):
+    def read_feature(self,file_path,tag_path=None):
         self.features = np.loadtxt(file_path, delimiter=",")
+        if tag_path is not None:
+            add_tag = self.read_tags(tag_path)
+            self.features = np.hstack([self.features, add_tag])
 
-    def save_res(self,res_list ,file_path):
+    
+    def read_tags(self,file_path):
+        tags = np.loadtxt(file_path, delimiter=",")
+        def one_hot(arr:np.ndarray):
+            arr = arr.astype(int)
+            n_classes = np.max(arr)+1
+            one_hot = np.zeros((len(arr),n_classes))
+            one_hot[np.arange(len(arr)),arr] = 1
+            return one_hot
+        add_tag = one_hot(tags) if tags.ndim == 1 else np.hstack([one_hot(tags[:,0]),one_hot(tags[:,1])])
+        return add_tag
+
+    def save_res(self,res_list, file_path):
         res = self.dataframe.copy()
         res["pred"] = res_list
         res.to_csv(file_path,index=False)
@@ -77,6 +106,6 @@ class TestSet:
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
     for i,name in enumerate(name_list):
-        print(name)
-        tmp = TrainingSet(f"./data/competition_data/{name}_train.csv")
-        print(tmp.best_model(np.arange(tmp.size)))
+        # print(name)
+        tmp = TestSet(f"./Demo/data/p_data/{name}_test.csv")
+        # tmp.read_feature()
