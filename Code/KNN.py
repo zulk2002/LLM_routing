@@ -2,7 +2,7 @@ from DataSet import TrainingSet, TestSet
 import numpy as np
 import time
 
-FEATURE = "features_mpnet"
+FEATURE = "features_p"
 
 def l2_distance(features,x):
     n = features.shape[0]

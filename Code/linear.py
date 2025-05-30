@@ -54,7 +54,7 @@ if __name__ == "__main__":
     for i,name in enumerate(name_list):
         training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
         test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
-        training_set.read_feature(f"./Demo/data/features/{name}_train.csv")
-        test_set.read_feature(f"./Demo/data/features/{name}_test_pred.csv")
+        training_set.read_feature(f"./Demo/data/features_p/{name}_train.csv")
+        test_set.read_feature(f"./Demo/data/features_p/{name}_test_pred.csv")
 
-        print(name,evaluate_training_set(training_set,k=2))
+        print(name,evaluate_training_set(training_set,k=8))

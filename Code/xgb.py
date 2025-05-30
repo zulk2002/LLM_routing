@@ -2,7 +2,7 @@ from DataSet import TrainingSet, TestSet
 import xgboost as xgb
 import numpy as np
 
-FEATURE = "features_mpnet"
+FEATURE = "features_p"
 
 class gb5:
     def __init__(self, depth = 5):
@@ -34,7 +34,6 @@ if __name__ == "__main__":
     for i,name in enumerate(name_list):
         training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
         test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
-        training_set.read_feature(f"./Demo/data/{FEATURE}/{name}_train.csv")
-        test_set.read_feature(f"./Demo/data/{FEATURE}/{name}_test_pred.csv")
-
-        print(name,evaluate_training_set(training_set,k=2))
+        training_set.read_feature(f"./Demo/data/{FEATURE}/{name}_train.csv",tag_path=f"./Demo/data/p_data/{name}_train_tag.csv")
+        test_set.read_feature(f"./Demo/data/{FEATURE}/{name}_test_pred.csv",tag_path=f"./Demo/data/p_data/{name}_test_tag.csv")
+        print(name,evaluate_training_set(training_set,k=10))

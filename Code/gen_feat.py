@@ -7,12 +7,12 @@ def gen_feat(model, name_list, file_dictionary):
     for i,name in enumerate(name_list):
         print(f"generating {name} ...")
 
-        training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
+        training_set = TrainingSet(f"./Demo/data/p_data/{name}_train.csv")
         sentences = training_set.questions
         embeddings = model.encode(sentences,device="cuda")
         np.savetxt(f"{file_dictionary}/{name}_train.csv", embeddings, delimiter=",")
 
-        test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
+        test_set = TestSet(f"./Demo/data/p_data/{name}_test.csv")
         sentences = test_set.questions
         embeddings = model.encode(sentences,device="cuda")
         np.savetxt(f"{file_dictionary}/{name}_test_pred.csv", embeddings, delimiter=",")
@@ -25,12 +25,12 @@ def save_model(model:SentenceTransformer, file_dictionary):
     model.save(file_dictionary)
     print("Model saved successfully")
 
-proxy("10.19.130.93:7890")
+# proxy("10.19.130.93:7890")
 # model = SentenceTransformer("./Model/model").to("cuda")
 model = SentenceTransformer("./Model/all-mpnet-base-v2")
 name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
 
-gen_feat(model,name_list,"./Demo/data/features_mpnet")
+gen_feat(model,name_list,"./Demo/data/features_p")
 
 
 
