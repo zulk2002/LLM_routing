@@ -1,4 +1,6 @@
 **/__pycache__/
 /Demo/data/
 /Model
-demo.zip
+*.zip
+*.png
+*.txt
