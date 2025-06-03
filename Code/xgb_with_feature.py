@@ -59,7 +59,7 @@ class gb5:
     def predict(self, context):
         return self.model.predict(context)
     
-def evaluate_training_set(traing_set:TrainingSet, All_LM_features, depth = 7, k = 5):
+def evaluate_training_set(training_set:TrainingSet, All_LM_features, depth = 7, k = 5):
     eval_idx, train_idx = training_set.split(seed=0)
     first_k = np.argsort(-training_set.scores.sum(axis=0))[:k]
     # 提取模型特征
@@ -79,16 +79,24 @@ def evaluate_training_set(traing_set:TrainingSet, All_LM_features, depth = 7, k 
     model = xgb.XGBRFRegressor(max_depth = depth)
     model.fit(train_dataset.data, train_dataset.labels)
     
+    res = []
     for i in val_index:
-        for j in first_k:
-            val
-            val_input = np.concatenate((val_input, LM_features[j]), axis=0)
+        rewards = []
+        for j in range(len(first_k)):
+            prompt_input_feature = training_set.features[i].reshape(1, -1)  # 1 * prompt_feature_dim
+            LM_input_feature = LM_features[j].reshape(1, -1)  # 1 * (LM_feature_dim + K)
+            val_input = np.concatenate((prompt_input_feature, LM_input_feature), axis=1)  # 1 * (prompt_feature_dim + LM_feature_dim + K)
+            prediction = model.predict(val_input)
+            rewards.append(prediction)
+        action = first_k[np.argmax(rewards)]
+        res.append(action)
+    
     # for i in range(k):
         # model_list[i].fit(traing_set.features[train_idx,:],traing_set.scores[train_idx,first_k[i]])
 
-    res = []
-    pred_list = [ model_list[i].predict(traing_set.features[eval_idx,:]) for i in range(k)]
-    res = first_k[np.argmax(pred_list,axis=0)]
+    # res = []
+    # pred_list = [ model_list[i].predict(traing_set.features[eval_idx,:]) for i in range(k)]
+    # res = first_k[np.argmax(pred_list,axis=0)]
     res_greedy = [training_set.best_model(train_idx)] * len(eval_idx)
     return training_set.evaluate(np.array(res),idx=eval_idx) - training_set.evaluate(np.array(res_greedy),idx=eval_idx)
 
@@ -102,4 +110,4 @@ if __name__ == "__main__":
         test_set.read_feature(f"./Demo/data/{FEATURE}/{name}_test_pred.csv")
         model_features_for_all_datasets = json.load(open("./Code/model_features.json","r"))
         model_features = [model_feature[name] for model_feature in model_features_for_all_datasets]
-        print(name,model_features,evaluate_training_set(training_set,k=2))
+        print(name,evaluate_training_set(training_set,model_features, k=5))
