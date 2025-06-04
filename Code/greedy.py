@@ -11,7 +11,7 @@ def evaluate_training_set(name):
     print(order)
 
     res_greedy = [training_set.best_model(train_idx)] * len(eval_idx)
-    return training_set.evaluate(np.array(res_greedy),idx=eval_idx,absolute=True)
+    return training_set.evaluate(np.array(res_greedy),idx=eval_idx)
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
