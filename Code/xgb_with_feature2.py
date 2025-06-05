@@ -50,7 +50,7 @@ class PromptWithLMFeaturesDataset():
         return np.concatenate((prompt_features, LM_features), axis=1)  # (D * K) * (prompt_feature_dim + LM_feature_dim)
 
     
-def evaluate_training_set(training_set:TrainingSet, All_LM_features, depth = 7, k = 5):
+def evaluate_training_set(training_set:TrainingSet, All_LM_features, depth = 30, k = 5):
     # eval_idx, train_idx = training_set.split(seed=0)
     first_k = np.argsort(-training_set.scores.sum(axis=0))[:k]
     # 提取模型特征
@@ -99,14 +99,14 @@ def evaluate_training_set(training_set:TrainingSet, All_LM_features, depth = 7, 
     print(unique_values[pos],counts[pos])
     # print(len(res),len(val_index))
     res_greedy = [training_set.best_model(train_index)] * len(val_index)
-    p=training_set.evaluate(np.array(res),idx=val_index)
-    q=training_set.evaluate(np.array(res_greedy),idx=val_index)
+    p=training_set.evaluate(np.array(res),idx=val_index,absolute=True)
+    q=training_set.evaluate(np.array(res_greedy),idx=val_index,absolute=True)
     return p - q
 
 
 if __name__ == "__main__":
     name_list = ["aclue","arc_c","cmmlu","hotpot_qa","math","mmlu","squad"]
-    for i,name in enumerate(name_list[1:]):
+    for i,name in enumerate(name_list):
         training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
         test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
         training_set.read_feature(f"./Demo/data/{FEATURE}/{name}_train.csv")

@@ -79,6 +79,14 @@ class TrainingSet:
         # print(f"Percentage:{performance/opt_idx*100:.2f}")
         return performance/opt_idx if absolute == False else performance
 
+    def drop(self, idx = None, drop_k = 0):
+        idx = idx if idx is not None else np.arange(self.size)
+        if drop_k==0:
+            return idx
+        best_k_idx = self.best_k(drop_k,idx)
+        non_zero_idx = np.where(np.sum(self.scores[np.ix_(idx,best_k_idx)],axis=1)>0)[0]
+        return idx[non_zero_idx]
+
     def split(self, seed=0, eval_rate = 0.2, drop_zero=0):
         np.random.seed(seed)
         N_eval = int(self.size * eval_rate)
@@ -86,13 +94,7 @@ class TrainingSet:
         np.random.shuffle(idx_shuffle)
         t_idx = idx_shuffle[N_eval:]
         if drop_zero > 0:
-            best_k_idx = self.best_k(drop_zero,t_idx)
-            # print(best_k_idx)
-            non_zero_idx = np.where(np.sum(self.scores[np.ix_(t_idx,best_k_idx)],axis=1)>0)[0]
-            # print(len(t_idx))
-            t_idx=t_idx[non_zero_idx]
-            # print(len(t_idx))
-            # exit(0)
+            t_idx=self.drop(t_idx,drop_zero)
         return idx_shuffle[:N_eval], t_idx
 
     def get_score_by_ans(self, ans, idx=None):

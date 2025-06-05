@@ -8465,7 +8465,7 @@ Choices:
 A. All tall violet
 B. 1 tall violet: 1 dwarf violet
 C. 1 tall violet: 1 tall white: 1 dwarf violet: 1 dwarf white
-D. 1 tall violet: 1 tall white",deepseek_chat
+D. 1 tall violet: 1 tall white",gpt_4o
 1164,"About: global_facts
 Question: As of 2019, about what percentage of Germans say the relationship between the U.S. and Germany is good?
 Choices:
@@ -13492,7 +13492,7 @@ Choices:
 A. the winning candidate receives less than 50 percent of the popular vote
 B. candidates receive an equal number of electoral votes and the popular vote determines the winner
 C. the Senate declares the formal winner
-D. the winning candidate receives more than 50% of the popular vote",deepseek_chat
+D. the winning candidate receives more than 50% of the popular vote",gpt_4o
 1857,"About: conceptual_physics
 Question: According to general relativity,
 Choices:
@@ -13900,7 +13900,7 @@ Choices:
 A. An opinion about the fairness of the agreed-upon procedures.
 B. A separate paragraph describing the effectiveness of the internal controls.
 C. A disclaimer of responsibility for the sufficiency of those procedures.
-D. A disclaimer of opinion on the fair presentation of the financial statements.",deepseek_chat
+D. A disclaimer of opinion on the fair presentation of the financial statements.",gpt_4o
 1913,"About: high_school_us_history
 Question: This question refers to the following information.
 They ask us how we shall govern these new possessions. I answer: Out of local conditions and the necessities of the case methods of government will grow. If England can govern foreign lands, so can America. If Germany can govern foreign lands, so can America. If they can supervise protectorates, so can America. Why is it more difficult to administer Hawaii than New Mexico or California? Both had a savage and an alien population; both were more remote from the seat of government when they came under our dominion than the Philippines are to-day.
@@ -14536,7 +14536,7 @@ Choices:
 A. A 95% confidence interval of mean height of teachers in a small town.
 B. A 95% confidence interval of the proportion of students in a small town who are taking some AP class.
 C. A two-tailed hypothesis test where the null hypothesis was that the mean expenditure on entertainment by male students at a high school is the same as that of female students.
-D. None of the above.",deepseek_chat
+D. None of the above.",gpt_4o
 1997,"About: human_aging
 Question: Remarriages are
 Choices:
@@ -17793,7 +17793,7 @@ Choices:
 A. Digital quantity
 B. Analog quantity
 C. Either Digital or Analog quantity
-D. None",deepseek_chat
+D. None",gpt_4o
 2441,"About: moral_scenarios
 Question: For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I turned on the baseball field's sprinklers during the baseball game. Scenario 2 | I threw a shovelful of dirt into the wheelbarrow.
 Choices:
@@ -19683,7 +19683,7 @@ Choices:
 A. Three months.
 B. Four months.
 C. Six months.
-D. Seven months.",deepseek_chat
+D. Seven months.",gpt_4o
 2702,"About: high_school_statistics
 Question: An insurance agent is successful in selling a life insurance policy to 20 percent of the customers he contacts. He decides to construct a simulation to estimate the mean number of customers he needs to contact before being able to sell a policy. Which of the following schemes should he use to do the simulation?
 Choices:

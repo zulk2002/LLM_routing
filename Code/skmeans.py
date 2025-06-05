@@ -25,17 +25,20 @@ def k_means(t_features, scores, e_featrues, k,seed = 0, scale = False, draw = Fa
 
     return best_models[e_labels]
 
-def solve_by_Kmeans(name, file_dictionary, k = 5, feature_name = ""):
-    print(name)
+def solve_by_Kmeans(name:str, file_dictionary:str, k = 5, feature_name = "",drop = 0):
+    print(name,f"k={k}",feature_name)
     training_set = TrainingSet(f"./Demo/data/competition_data/{name}_train.csv")
     test_set = TestSet(f"./Demo/data/competition_data/{name}_test_pred.csv")
     training_set.read_feature(f"./Demo/data/{feature_name}/{name}_train.csv")
     test_set.read_feature(f"./Demo/data/{feature_name}/{name}_test_pred.csv")
 
-    centers, best_models = k_means(training_set.features,training_set.scores,k=k,scale=True)
-    distances = np.linalg.norm(test_set.features[:, np.newaxis] - centers, axis=2)
-    labels = np.argmin(distances, axis=1)
-    res = best_models[labels]
+    #### drop ###
+    drop_idx = training_set.drop(None,drop)
+    # if np.allclose(drop_idx,np.arange(training_set.size)):
+    #     print("*")
+    #     exit(0)
+
+    res = k_means(training_set.features[drop_idx,:],training_set.scores[drop_idx,:],test_set.features,k=k,scale=False)
     res_names = training_set.dataframe.columns.to_numpy()[res+2]
     test_set.save_res(res_names,f"{file_dictionary}/{name}_test_pred.csv")
     return res_names
@@ -114,13 +117,13 @@ if __name__ == "__main__":
     # print(training_set.evaluate(res,e_idx,absolute=True))
     # print(len(e_idx))
     # evaluate_training_set(training_set,k=8)
-    # k_list_o = [8,1,3,3,15,7,1]
-    # k_list = [9,1,3,3,3,13,15]
-    k_option = range(2,51,2)
-    res_list = try_k(name_list,k_option,times=50,feature_name=feature_name)
-    plot_res(res_list,"./drop0.png")
-    # for i,name in enumerate(name_list):
-    #     solve_by_Kmeans(name,f"./Demo/result_Kmeans",k=k_list_o[i])
+    # k_list_o = [8,1,3,1,2,7,1]
+    k_list = [3,1,3,1,2,7,1]
+    # k_option = range(2,31)
+    # res_list = try_k(name_list,k_option,times=8,feature_name=feature_name)
+    # plot_res(res_list,"./drop5_8.png")
+    for i,name in enumerate(name_list):
+        solve_by_Kmeans(name,f"./Demo/result_Kmeans",k=k_list[i],feature_name=feature_name,drop=5)
 
     # solve_by_Kmeans(name_list[4],f"./Demo/result_Kmeans",k=k_list[4])
 
